@@ -1,0 +1,36 @@
+/*公用样式*/
+body{
+	background: #f8f8f8;
+}
+.box{
+	width: 100%;
+}
+.fr{
+	float: right;
+}
+
+/*导航*/
+.box .box-name{
+	height: 78px;
+	border-bottom: 1px solid gray;
+	overflow: hidden;
+	background: #FFFFFF;
+	margin: auto;
+}
+.box-name ul{
+	float: left;
+	line-height: 90px;
+}
+.box-name li{
+	float: left;
+	padding: 0 20px;
+}
+.box-name li:hover{
+	background: #2f3b4b;
+	color: #FFFFFF;
+}
+.box-name .fr{
+	float: right;
+}
+
+
