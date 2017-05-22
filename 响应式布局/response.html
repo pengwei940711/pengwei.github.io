@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--字符编码-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--匹配最新的IE浏览器，做兼容-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1"><!--视口-->
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				width: 90%;
+				height: 1024px;
+				/*border: 1px solid red;*/
+				margin: auto;
+				text-align: center;
+			}
+			.header{
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				background: #CCCCCC;
+				margin:20px auto;
+			}
+			.nav{
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				margin: auto;
+				margin-bottom: 20px;
+				background: #CCCCCC;
+			}
+			.box{
+				width: 100%;
+			}
+			.box1{
+				width: 60%;
+				height: 200px;
+				margin-bottom:20px ;
+				background: #DDEFCB;
+				float: left;
+			}
+			.box2{
+				width: 35%;
+				height: 200px;
+				background: #FFCBDD;
+				float: right;
+			}
+			p{
+				padding: 0 20px;
+			}
+			.footer{
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				margin:20px auto;
+				background: #CCCCCC;
+				clear: both;
+			}
+			@media(max-width:375px ){
+				.box1{
+					width: 100%;
+					float: none;
+					
+				}
+				h4{
+					padding-top: 20px;
+				}
+				.box2{
+					width: 100%;
+					float: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">页头</div>
+			<div class="nav">导航</div>
+			<div class="box">
+				<div class="box1">
+					<h4>主题</h4>
+					<p>There are people you love, your hobbies  and fear. Stress does not make you better and fear does not make you happier. Many women suffer from chronic stress because they let it happen.</p>
+				</div>
+				<div class="box2">
+					<h4>边栏</h4>
+					<p>There are people you love, your hobbies There is so much more than stress and fear. Stress does not make you better and fear does not make you happier. </p>
+				</div>
+			</div>
+			<div class="footer">页脚</div>
+		</div>
+	</body>
+</html>

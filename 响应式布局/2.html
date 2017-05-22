@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--字符编码-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--匹配最新的IE浏览器，做兼容-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1"><!--视口-->
+	    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<title></title>
+		<style type="text/css">
+			.cont{
+				width: 100%;
+				height: 100%;
+			}
+			.nav{
+				width: 100%;
+				height: 60px;
+				background: #222222;
+			}
+			.nav1{
+				width: 1190px;
+				height: 60px;
+				background: #222222;
+				margin: auto;
+				/*border: 1px solid red;*/
+			}
+			.nav1 ul{
+				overflow: hidden;
+			}
+			.nav1 li{
+				float: left;
+				font-size: 16px;
+				line-height: 40px;
+				margin-right: 20px;
+			}
+			.nav1 a{
+				color: #9d9d9d;
+				text-decoration: none;
+			}
+			.nav1 .right{
+				float: right;
+			}
+			.download{
+				width: 100%;
+				height: 500px;
+				background: #55284C;
+				overflow: hidden;
+			}
+			.download1{
+				text-align: center;
+				color: #fff;
+				padding-right: 15px;
+			    padding-left: 15px;
+			    margin-right: auto;
+			    margin-left: auto;
+			    margin-top: 70px;
+			}
+			.download1 h1{
+				font-size: 100px;
+				margin-top: 20px;
+    			margin-bottom: 10px;
+			}
+			.download1 h2{
+				font-size: 30px;
+				margin-top: 20px;
+    			margin-bottom: 10px;
+    			font-weight: 200;
+    			line-height: 1.25;
+			}
+			.download1 button{
+				padding: 10px 30px;
+				background: #337AB7;
+				color: #FFFFFF;
+				font-size: 14px;
+				margin-top: 20px;
+				border: #337AB7;
+				border-radius:5px ;
+			}
+			.download1 p{
+				color: #FFFFFF;
+				font-size: 13px;
+				margin-top: 20px;
+			}
+			.community{
+				width: 100%;
+				height: 60px;
+				background: #F5F5F5;
+			}
+			.community1{
+				width: 300px;
+				height: 100%;
+				margin: auto;
+				font-size: 14px;
+				text-align: center;
+			}
+			.community1 p{
+				line-height: 60px;
+				float: left;
+			}
+			.name{
+				margin-left: 40px;
+			}
+			.cont .peedd{
+				width: 100%;
+				min-height: 300px;
+			}
+			.project{
+				width: 1190px;
+				margin: auto;
+				text-align: center;
+			}
+			.project h3{
+				margin-top: 50px;
+				font-size: 40px;
+			}
+			.project p{
+				margin-top: 10px;
+				font-size: 14px;
+			}
+			.line{
+				width: 60%;
+				height: 1px;
+				background: #CCCCCC;
+				margin:20px auto;
+			}
+			.projectcont{
+				margin: auto;
+				overflow: hidden;
+				margin-top: 40px;
+				/*border: 1px solid red;*/
+			}
+			.img{
+				margin: 25px 15px;
+				float: left;
+				width: 262px;
+				height: 336px;
+				border: 1px solid #CCCCCC;
+			}
+			.img img{
+				margin:5px auto 0;
+				width: 252px;
+			}
+			.imgcont h3{
+				color: #2D8EBB;
+				font-size: 24px;
+			}
+			.imgcont p{
+				font-size: 12px;
+				color: #CCCCCC;
+			}
+			@media(max-width: 1200px) {
+				.public{
+					width: 900px;
+				}
+				.right{
+					display: none;
+				}
+				.nav1 .isl{
+					display: none;
+				}
+			}
+			@media(max-width: 900px) {
+				.public{
+					width: 588px;
+				}
+				.line{
+					width: 20%;
+				}
+			}
+			@media(max-width: 600px) {
+				.public{
+					width: 320px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<div class="nav">
+				<div class="nav1 public">
+					<ul>
+						<li>
+							<a href="">
+								Bootstrap中文网
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Bootstrap2中文文档
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Bootstrap3中文文档
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Bootstrap4.0预览
+							</a>
+						</li>
+						<li>
+							<a href="">
+								less教程
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Bootstrap中文网
+							</a>
+						</li>
+						<li class="isl">
+							<a href="">
+								网站实例
+							</a>
+						</li>
+						<li class="right">
+							<a href="">
+								关于
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="download">
+				<div class="download1">
+					<h1>Bootstrap</h1>
+					<h2>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</h2>
+					<button>Bootstrap3中文文档（v3.3.7）</button>
+					<p>Bootstrap2中文文档（v2.3.2）</p>
+				</div>
+			</div>
+			<div class="community">
+				<div class="community1">
+					<p>Bootstrap社区问答</p>
+					<p class="name">Bootstrap中文网</p>
+				</div>
+			</div>
+			<div class="peedd">
+				<div class="project public">
+					<h3>Bootstrap相关优质项目推荐</h3>
+					<p>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</p>
+					<div class="line"></div>
+					<div class="projectcont">
+						<ul>
+							<li class="img">
+								<img src="img/codeguide.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/dd.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/dds.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/hh.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/jgh.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/khjk.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/hh.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/fgh.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/codeguide.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/ghfgh.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/dds.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							<li class="img">
+								<img src="img/codeguide.png" />
+								<div class="imgcont">
+									<h3>Bootstrap 编码规范</h3>
+									<p> Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
