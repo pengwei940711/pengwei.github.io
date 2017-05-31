@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			#list{
+				width: 320px;
+				overflow: hidden;
+			}
+			li{
+				float: left;
+			}
+			.choose{
+				float: left;
+			}
+			.choose input{
+				text-align: center;
+				width: 30px;
+				border: none;
+			}
+			#list p{
+				float: left;
+				margin-top: 5px;
+				margin-left: 5px;
+			}
+			.total{
+				width: 300px;
+			}
+			.total p{
+				margin-top: 10px;
+				margin-right: 10px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="list">
+			<li>
+				<div class="choose">
+					<button>-</button>
+					<input type="" name="" id="" value="" />
+					<button>+</button>
+				</div>
+				<p>
+					单价：
+					<span>12.5</span>
+					<em>元</em>
+				</p>
+				<p>
+					小计：
+					<span></span>
+					<em>元</em>
+				</p>
+			</li>
+			<li>
+				<div class="choose">
+					<button>-</button>
+					<input type="" name="" id="" value="" />
+					<button>+</button>
+				</div>
+				<p>
+					单价：
+					<span>13.5</span>
+					<em>元</em>
+				</p>
+				<p>
+					小计：
+					<span></span>
+					<em>元</em>
+				</p>
+			</li>
+			<li>
+				<div class="choose">
+					<button>-</button>
+					<input type="" name="" id="" value="" />
+					<button>+</button>
+				</div>
+				<p>
+					单价：
+					<span>9.5</span>
+					<em>元</em>
+				</p>
+				<p>
+					小计：
+					<span></span>
+					<em>元</em>
+				</p>
+			</li>
+			<li>
+				<div class="choose">
+					<button>-</button>
+					<input type="" name="" id="" value="" />
+					<button>+</button>
+				</div>
+				<p>
+					单价：
+					<span>20.5</span>
+					<em>元</em>
+				</p>
+				<p>
+					小计：
+					<span></span>
+					<em>元</em>
+				</p>
+			</li>
+			<li>
+				<div class="choose">
+					<button>-</button>
+					<input type="" name="" id="" value="" />
+					<button>+</button>
+				</div>
+				<p>
+					单价：
+					<span>15.5</span>
+					<em>元</em>
+				</p>
+				<p>
+					小计：
+					<span></span>
+					<em>元</em>
+				</p>
+			</li>
+		</ul>
+		<div id="total">
+			<p>
+				商品合计共：
+				<span>0</span>
+				<em>件</em>
+			</p>
+			<p>
+				共花费了：
+				<span>0</span>
+				<em>元</em>
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var oList=document.getElementById('list');
+		var aLi=oList.getElementsByTagName('li');
+		var oTotal=document.getElementById('total');
+		var aSpan2=oTotal.getElementsByTagName('span')[0];
+		var aSpan3=oTotal.getElementsByTagName('span')[1];
+		var num1=0;
+		var money=0;
+			for(var i=0;i<aLi.length;i++){
+				change(aLi[i]);
+			}
+		function change(obj){
+			var oChoose=obj.getElementsByClassName('choose');
+			var oMinu=obj.getElementsByTagName('button')[0];
+			var oPuls=obj.getElementsByTagName('button')[1];
+			var oInput=obj.getElementsByTagName('input')[0];
+			var aSpan=obj.getElementsByTagName('span')[0];
+			var aSpan1=obj.getElementsByTagName('span')[1];
+			var num=0;
+			oInput.value=num;
+			oMinu.onclick=function(){
+				num--;
+				num1--;
+				oInput.value=num;
+				aSpan1.innerHTML=parseFloat(aSpan.innerHTML)*num;
+				aSpan2.innerHTML=num1;
+				money=parseFloat(money)-parseFloat(aSpan.innerHTML);
+				aSpan3.innerHTML=parseFloat(money);
+			}
+			oPuls.onclick=function(){
+				num++;
+				num1++;
+				oInput.value=num;
+				aSpan1.innerHTML=parseFloat(aSpan.innerHTML)*num;
+				aSpan2.innerHTML=num1;
+				money=parseFloat(money)+parseFloat(aSpan.innerHTML);
+				aSpan3.innerHTML=parseFloat(money);
+			}
+		}
+	</script>
+</html>
