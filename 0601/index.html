@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+		<style type="text/css">
+			.cont {
+				width: 960px;
+				overflow: hidden;
+			}
+			
+			.cont #list {
+				height: 400px;
+				width: 150px;
+				float: left;
+				/*border: 1px solid red;*/
+				background: #E7E7E7;
+			}
+			
+			#list li {
+				border: 1px solid #cccccc;
+				padding: 20px;
+				text-align: center;
+				height: 58px;
+				font-size: 12px;
+			}
+			
+			#list li:hover {
+				background: #FFFFFF;
+			}
+			
+			#list i {
+				font-size: 30px;
+				color: #FF0000;
+			}
+			
+			.cont .right {
+				height: 400px;
+				width: 800px;
+				float: left;
+				position: relative;
+			}
+			#pic {
+				width: 800px;
+				height: 400px;
+			}
+			#list1{
+				position: absolute;
+				bottom: -10px;
+				height: 30px;
+			}
+			#list1 li{
+				color: #FFFFFF;
+				text-align: center;
+				width: 198px;
+				height: 30px;
+				background: rgba(0,0,0,0.5);
+				float: left;
+				border-left:1px solid #FFFFFF ;
+				border-right:1px solid #FFFFFF ;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="cont">
+			<ul id="list">
+				<li>
+					<i class="iconfont">&#xe730;</i>
+					<p>热团</p>
+				</li>
+				<li>
+					<i class="iconfont">&#xe63b;</i>
+					<p>特惠</p>
+				</li>
+				<li>
+					<i class="iconfont">&#xe602;</i>
+					<p>活动</p>
+				</li>
+				<li>
+					<i class="iconfont">&#xe644;</i>
+					<p>推荐</p>
+				</li>
+			</ul>
+			<div class="right">
+				<img id="pic" src="img/a.jpg" />
+				<ul id="list1">
+					<li>
+							疯抢48小时
+					</li>
+					<li>
+							尖货提前抢
+					</li>
+					<li>
+							美的空调极速闪装
+					</li>
+					<li>
+							美的品牌日
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var oList = document.getElementById('list');
+		var oList1 = document.getElementById('list1');
+		var oPic = document.getElementById('pic');
+		var aLi = oList.getElementsByTagName('li');
+		var aLi1 = oList1.getElementsByTagName('li');
+		var num = 0;
+		var arr2 = [
+			['img/a.jpg', 'img/a1.jpg', 'img/a2.jpg', 'img/a3.jpg'],
+			['img/a4.jpg', 'img/a5.jpg', 'img/a7.jpg'],
+			['img/a7.jpg', 'img/a8.jpg', 'img/a9.jpg', 'img/a10.jpg', 'img/a11.jpg'],
+			['img/a1.jpg', 'img/a2.jpg', 'img/a3.jpg']
+		]
+		var arr1=[
+			['疯抢48小时', '尖货提前抢', '美的空调极速闪装', '美的品牌日'],
+			['疯抢48小时', '尖货提前抢', '美的空调极速闪装'],
+			['疯抢48小时', '尖货提前抢', '美的空调极速闪装','疯抢48小时', '尖货提前抢'],
+			['疯抢48小时', '尖货提前抢', '美的空调极速闪装']
+		]
+		for(var i = 0; i < arr2.length; i++) {
+			aLi[i].num = i;
+			aLi[i].onmouseover = function() {
+				num = this.num;
+				var str = '';
+				for(var j = 0; j < arr2[num].length; j++) {
+					str += '<li>'+ arr1[num][j] +'</li>';
+				}
+				oList1.innerHTML= str;
+				for(var k=0;k<arr2[num].length;k++){
+					aLi1[k].style.width=(parseInt(800/arr2[num].length)-2)+'px';
+				}
+				oPic.src = arr2[this.num][0];
+				for(var j = 0; j < arr2[this.num].length; j++) {
+					aLi1[j].num = j;
+					aLi1[j].onmouseover = function() {
+						oPic.src = arr2[num][this.num];
+					}
+				}
+			}
+		}
+	</script>
+
+</html>

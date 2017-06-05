@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			.cont {
+				/*border: 1px solid red;*/
+				background: #DEE7E7;
+				width: 410px;
+				overflow: hidden;
+			}
+			
+			.nav {
+				height: 50px;
+				width: 400px;
+				border-bottom: 1px solid #29739C;
+			}
+			
+			.nav strong {
+				float: left;
+				font-size: 24px;
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+			
+			.list {
+				height: 25px;
+				width: 201px;
+				margin-top: 25px;
+				float: right;
+				border: 1px solid #29739C;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			.list li {
+				font-size: 15px;
+				line-height: 25px;
+				float: left;
+				padding: 0 18px;
+				border-right: 1px solid #29739C;
+			}
+			
+			.list li.active {
+				background: #FFFFFF;
+			}
+			
+			.cont1 {
+				width: 390px;
+				margin: auto;
+			}
+			
+			.list1 {
+				width: 100%;
+			}
+			
+			.list1 li {
+				width: 100%;
+				border-bottom: 1px dashed #FFFFFF;
+				line-height: 25px;
+				font-size: 15px;
+				overflow: hidden;
+				padding: 5px;
+			}
+			
+			.list1 li span {
+				margin: 5px;
+				width: 20px;
+				height: 15px;
+				text-align: center;
+				line-height: 15px;
+				background: #21638C;
+				color: white;
+				font-weight: bold;
+				display: inline-block;
+				float: left;
+			}
+			
+			.list1 li img {
+				width: 100px;
+				height: 80px;
+				float: left;
+				margin-right: 5px;
+				display: none;
+			}
+			
+			.list1 li a {
+				color: white;
+				text-align: center;
+				line-height: 20px;
+				font-size: 15px;
+				background: #29739C;
+				padding: 4px 8px;
+				border-radius: 4px;
+				float: right;
+				margin-right: 5px;
+				display: none;
+			}
+			
+			.list1 li.active img,
+			.list1 li.active a {
+				display: inline-block;
+			}
+			
+			.list1 li:hover {
+				background: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="cont">
+			<div class="nav">
+				<strong>观看排行榜</strong>
+				<ul class="list">
+					<li class="active">每日</li>
+					<li>每周</li>
+					<li>全部</li>
+				</ul>
+			</div>
+			<ul class="list1">
+				<!--<li>
+					<span>1</span>
+					<img src="img/fu5.jpg"/>
+					<p>世界十大未解之谜，百慕大三角~</p>
+					<a>播放</a>
+				</li>-->
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var oList = document.getElementsByClassName('list')[0];
+		var aLi = oList.getElementsByTagName('li');
+		var oList1 = document.getElementsByClassName('list1')[0];
+		var aLi1 = oList1.getElementsByTagName('li');
+
+		var arr = [
+			[{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				}
+			],
+			[{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '[无敌啦]世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				}
+			],
+			[{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '【还有谁】世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				},
+				{
+					'imgSrc': 'img/fu5.jpg',
+					'Text': '世界十大未解之谜，百慕大三角~',
+					'myHerf': 'http://www.qq.com'
+				}
+			]
+		]
+//主菜单
+		for(var i = 0; i < arr.length; i++) {
+			aLi[i].index = i;
+			aLi[i].onclick = function() {
+				for(i = 0; i < arr.length; i++) {
+					aLi[i].className = '';
+				};
+				this.className = 'active';
+				creat(this.index);
+			}
+		}
+//内容
+		function creat(n){
+			var str = '';
+				for(var i = 0; i < arr[n].length; i++) {
+					str += '<li>' +
+						'<span>' + (i + 1) + '</span>' +
+						'<img src=" ' + arr[n][i].imgSrc + ' "/>' +
+						'<p>' + arr[n][i].Text + '</p>' +
+						'<a href="' + arr[n][i].myHref + '">播放</a>' +
+						'</li>'
+				};
+				oList1.innerHTML = str;
+				wbList();
+		}
+//为了开始时，显示内容；
+		creat(0);
+		function wbList(){
+			for(var i = 0; i < aLi1.length; i++) {
+					aLi1[i].onmouseover = function() {
+						for(i = 0; i < aLi1.length; i++) {
+							aLi1[i].className = '';
+						};
+						this.className = 'active';
+					}
+				}
+		}
+	</script>
+
+</html>
