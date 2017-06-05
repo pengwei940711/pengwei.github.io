@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			h3{
+				font-size: 24px;
+				margin-bottom: 5px;
+			}
+			.cont1{
+				width: 720px;
+				border-top: 1px solid fuchsia;
+				position: relative;
+			}
+			.cont1 li{
+				float: left;
+				width: 100px;
+				padding: 10px;
+				text-align: center;
+				font-size: 14px;
+			}
+			.cont1 img{
+				height: 80px;
+				width: 80px;
+			}
+			.cont1 h4{
+				color: #D8D8D8;
+			}
+			.cont1 .box{
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				position: absolute;
+				top: -25px;
+				left: 20px;
+			}
+			.box p{
+				float: left;
+				background: black;
+				color: #ffffff;
+			}
+			.box span{
+				background: violet;
+				padding: 6px 3px;
+			}
+			.box em{
+				display: inline-block;
+				height: 10px;
+				width: 10px;
+				background: black;
+				position: absolute;
+				bottom: -3px;
+				left: 10px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<h3>许嵩专辑</h3>
+			<div class="cont1">
+				<ul class="list">
+					<!--<li>
+						<img src="img/w.jpg" />
+						<p>美女小姐姐</p>
+						<h4>温柔大方</h4>
+					</li>-->
+				</ul>
+				<div class="box">
+						<em></em>
+						<p>播放</p>
+						<span>下载</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		var oList=document.getElementsByClassName('list')[0];
+		var aLi=document.getElementsByTagName('li');
+		var oBox=document.getElementsByClassName('box')[0];
+
+		arr=[
+				{
+				'imgSrc':'img/u=1312604131,4253694810&fm=26&gp=0.jpg',
+				'Text':'这世界需要你',
+				'Text1':'天使'
+				},
+				{
+				'imgSrc':'img/u=1541088821,2541131829&fm=26&gp=0.jpg',
+				'Text':'清明雨上',
+				'Text1':'折菊寄思'
+				},	
+				{
+				'imgSrc':'img/u=1641293455,856207830&fm=26&gp=0.jpg',
+				'Text':'断桥残雪',
+				'Text1':'白堤柳帘'
+				},	
+				{
+				'imgSrc':'img/u=2314045001,2489753331&fm=26&gp=0.jpg',
+				'Text':'粉色信笺',
+				'Text1':'盛满思念'
+				},	
+				{
+				'imgSrc':'img/u=2524894435,1999057594&fm=26&gp=0.jpg',
+				'Text':'如果当时',
+				'Text1':'红雨瓢泼'
+				},	
+				{
+				'imgSrc':'img/u=2927538487,1821398344&fm=26&gp=0.jpg',
+				'Text':'半城烟沙',
+				'Text1':'金戈铁马'
+				},	
+				{
+				'imgSrc':'img/u=3085129463,1093140782&fm=26&gp=0.jpg',
+				'Text':'有何不可',
+				'Text1':'解冻冰河'
+				},	
+				{
+				'imgSrc':'img/u=3782560096,1826699667&fm=26&gp=0.jpg',
+				'Text':'灰色头像',
+				'Text1':'坠落升空'
+				},	
+				{
+				'imgSrc':'img/u=4156129045,2318345219&fm=26&gp=0.jpg',
+				'Text':'平行宇宙',
+				'Text1':'意料之中'
+				},	
+				{
+				'imgSrc':'img/u=997820828,4292353689&fm=26&gp=0.jpg',
+				'Text':'最佳演员',
+				'Text1':'恍若隔世'
+				},	
+				{
+				'imgSrc':'img/w.jpg',
+				'Text':'飞蛾扑火',
+				'Text1':'单人旅途'
+				},	
+				{
+				'imgSrc':'img/w1.jpg',
+				'Text':'玫瑰花的葬礼',
+				'Text1':'仅有的你'
+				}
+			]
+		
+		var str='';
+		for(var i=0;i<arr.length;i++){
+			str+='<li>'+
+				'<img src=" ' + arr[i].imgSrc + ' "/>'+
+				'<p>' + arr[i].Text + '</p>' +
+				'<h4>' + arr[i].Text1 + '</h4>' 
+			+'</li>'
+		};
+		oList.innerHTML=str;
+		
+		for(var i=0;i<arr.length;i++){
+			aLi[i].index=i;
+			aLi[i].onmouseover=function(){
+				if(this.index<6){
+					oBox.style.left=(30+this.index*120)+'px';
+					oBox.style.top=-25+'px';
+				}else{
+					oBox.style.top=120+'px';
+					oBox.style.left=(30+(this.index-6)*120)+'px';
+				}
+				
+			}
+		}
+		
+	</script>
+</html>
