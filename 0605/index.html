@@ -35,6 +35,7 @@
 				position: absolute;
 				top: -25px;
 				left: 20px;
+				display: none;
 			}
 			.box p{
 				float: left;
@@ -159,6 +160,7 @@
 		for(var i=0;i<arr.length;i++){
 			aLi[i].index=i;
 			aLi[i].onmouseover=function(){
+				oBox.style.display='block';
 				if(this.index<6){
 					oBox.style.left=(30+this.index*120)+'px';
 					oBox.style.top=-25+'px';
@@ -167,6 +169,9 @@
 					oBox.style.left=(30+(this.index-6)*120)+'px';
 				}
 				
+			}
+			aLi[i].onmouseout=function(){
+				oBox.style.display='none';
 			}
 		}
 		
