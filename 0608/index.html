@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			.cont{
+				position: relative;
+				overflow: hidden;
+			}
+			img{
+				height: 500px;
+				float: left;
+			}
+			.atvice,.atvice1,.atvice2{
+				width: 150px;
+				height: 50px;
+				position: absolute;
+				top: 50%;
+				background: #14A2E0;
+				color: #ffffff;
+				line-height: 50px;
+				text-align: center;
+			}
+			.atvice{
+				left: 200px;
+			}
+			.atvice1{
+				left: 400px;
+			}
+			.atvice2{
+				left: 600px;
+			}
+			#txet{
+				height: 50px;
+				overflow: hidden;
+			}
+			#txet p{
+				display: none;
+			}
+			#txet .atvice3{
+				width: 150px;
+				background: #14A2E0;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<img id="pic" src="img/a.png" />
+			<div class="atvice">我是合作伙伴</div>
+			<div class="atvice1">
+				<div id="txet">
+					<p class="atvice3">我是商家用户</p>
+					<p>我是支付宝商家</p>
+					<p>我是口碑商家</p>
+				</div>
+			</div>
+			<div class="atvice2">我是个人用户</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/myQuery.js" ></script>
+	<script type="text/javascript">
+		var arr=['img/a.png','img/a1.png','img/a2.png'];
+		var oAtvice=document.getElementsByClassName('atvice1')[0];
+		var aP=$('txet').getElementsByTagName('p');
+		var n=0;
+		var timer=null;
+			timer = setInterval(function(){
+				$('pic').src=arr[n];
+				if(n<arr.length-1){
+					n++
+				}else{
+					n=0;
+				}
+		},2000)
+		oAtvice.onmouseover=function(){
+			for(var i=0;i<aP.length;i++){
+					aP[i].className='atvice3';
+				}
+					aP[0].className='';
+			clearInterval(oAtvice.timer);
+			oAtvice.timer = setInterval(function (){
+				var H = parseInt(getStyle($('txet'),'height'))+5;	
+				if(H>=100){
+					H=100;
+					clearInterval(oAtvice.timer);
+				}
+				$('txet').style.height=H+'px';
+				$('txet').style.marginTop=(50-H)/2+'px';
+			},40)
+		}
+		oAtvice.onmouseout=function(){
+			clearInterval(oAtvice.timer);
+			oAtvice.timer = setInterval(function (){
+				var H = parseInt(getStyle($('txet'),'height'))-5;	
+				if(H<50){
+					H=50;
+					clearInterval(oAtvice.timer);
+					aP[0].className='atvice3';
+				}
+				$('txet').style.height=H+'px';
+				$('txet').style.marginTop=(50-H)/2+'px';
+			},40)
+		}
+		
+	</script>
+</html>
