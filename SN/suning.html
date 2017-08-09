@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fonts1.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fonts2.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fonts3.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fonts4.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts1.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts2.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts3.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts4.css" />
+		<link rel="stylesheet" type="text/css" href="css/jutihua.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/jutihua1.css"/>
 		<style type="text/css">
-			.cont{
+			.cont {
 				width: 100%;
 				height: 100%;
 				overflow: hidden;
 				background: #F2F2F2;
 			}
-			.cont .love{
+			
+			.cont .love {
 				width: 100%;
 				height: 100px;
 				background: #FE85D2;
 				position: relative;
 			}
-			.loveimg{
+			
+			.loveimg {
 				width: 1190px;
 				height: 100px;
 				margin: auto;
 			}
-			.close{
+			
+			.close {
 				position: absolute;
 				top: 3px;
 				right: 56px;
 			}
-			.cont .nav{
+			
+			.cont .nav {
 				width: 100%;
 				background: #f5f5f5;
 				height: 35px;
@@ -40,29 +47,35 @@
 				border-bottom: 1px solid #eee;
 				position: relative;
 			}
-			.nav a span:hover{
+			
+			.nav a span:hover {
 				color: #f60;
 			}
-			.nav1{
+			
+			.nav1 {
 				width: 1190px;
 				height: 100%;
 				/*border: 1px solid red;*/
 				margin: auto;
 			}
-			.navleft{
-				width: 164px;
+			
+			.navleft {
+				width: 166px;
 				height: 100%;
 				float: left;
 			}
-			.navleft1{
+			
+			.navleft1 {
 				position: relative;
 				float: left;
 				margin-left: -1px;
 			}
-			.navleft1 a:hover{
+			
+			.navleft1 a:hover {
 				color: #f60;
 			}
-			.navnl1{
+			
+			.navnl1 {
 				color: #666;
 				width: 65px;
 				display: block;
@@ -71,27 +84,30 @@
 				padding: 0 10px;
 				overflow: hidden;
 			}
-			.navnl1 span{
+			
+			.navnl1 span {
 				font-size: 12px;
 				position: relative;
 				display: inline-block;
 			}
-			.nav .iconfont{
+			.nav .iconfont {
 				float: right;
 				display: inline-block;
 				font-size: 7px;
 				width: 10px;
 				color: #bbb;
-				margin-top: 5px;
-				margin-left: 3px;
+				margin-top: 3px;
+				margin-left: 4px;
 				vertical-align: middle;
 			}
-			.navleft2{
+			
+			.navleft2 {
 				position: relative;
 				float: left;
 				margin-left: -1px;
 			}
-			.navnl2{
+			
+			.navnl2 {
 				display: block;
 				position: relative;
 				float: left;
@@ -99,63 +115,74 @@
 				padding: 0 10px;
 				overflow: hidden;
 			}
-			.navnl2 span{
+			
+			.navnl2 span {
 				display: inline-block;
 				cursor: pointer;
 				font-size: 12px;
 			}
-			.navright{
-				width: 680px;
+			
+			.navright {
+				width: 684px;
 				height: 100%;
 				float: right;
 			}
-			.navright1{
+			
+			.navright1 {
 				position: relative;
 				float: left;
 				padding: 0 10px;
 				overflow: hidden;
 				display: block;
 			}
-			.navright1 a:hover{
+			
+			.navright1 a:hover {
 				color: #f60;
 			}
-			.navr1{
+			
+			.navr1 {
 				color: #666;
 				font-size: 12px;
 			}
-			.navr2{
+			
+			.navr2 {
 				font-size: 12px;
 				position: relative;
 				margin-left: 10px;
 				color: #F60;
 				top: 0;
 			}
-			.navr2 .iconfont{
+			
+			.navr2 .iconfont {
 				float: right;
 				font-size: 15px;
 				color: #FF2E00;
 				margin-top: 3px;
 			}
-			.navright2{
+			
+			.navright2 {
 				position: relative;
 				float: left;
 				margin-left: -1px;
 			}
-			.navr3{
-				width: 63px;
+			
+			.navr3 {
+				width: 69px;
 				display: block;
 				position: relative;
 				float: left;
-				padding-left:15px;
+				padding-left: 10px;
 				overflow: hidden;
 			}
-			.navr3 span{
+			
+			.navr3 span {
 				display: inline-block;
 				cursor: pointer;
 				font-size: 12px;
 				color: #666;
 			}
-			.navr3 .iconfont{
+			
+			.navr3 .iconfont {
 				display: inline-block;
 				font-size: 7px;
 				width: 10px;
@@ -163,7 +190,8 @@
 				margin-left: 3px;
 				vertical-align: middle;
 			}
-			.navr4{
+			
+			.navr4 {
 				color: #F60;
 				padding: 0 0 0 9px;
 				line-height: 34px;
@@ -173,69 +201,51 @@
 				float: left;
 				overflow: hidden;
 			}
-			.navr4 .iconfont.icon-jianyingorder{
+			
+			.navr4 .iconfont.icon-jianyingorder {
 				font-size: 14px;
 				float: left;
 				margin-top: 1px;
-				padding-right:8px;
+				padding-right: 8px;
 				color: #F60;
 			}
-			.navr4 span{
+			
+			.navr4 span {
 				font-size: 12px;
 			}
-			.navright3{
-				margin-left: 10px;
-				position: relative;
-				float: left;
-			}
-			.navr5{
-				margin-left: 10px;
-				display: block;
-				position: relative;
-				float: left;
-				padding: 0 10px;
-				overflow: hidden;
-			}
-			.navr5 .iconfont.icon-shouji{
-				margin-right: 2px;
-				font-size: 17px;
-				color: #666;
-				float: left;
-				width: 18px;
-				line-height: 30px;
-				vertical-align: middle;
-			}
-			.navr5 span{
-				font-size: 12px;
-				color: #666;
-			}
-			.navr{
+			
+			.navr {
 				text-align: center;
 				width: 45px;
 			}
-			.cont .purchase{
+			
+			.cont .purchase {
 				width: 100%;
 				height: 110px;
 				background: #FFFFFF;
 				/*border: 1px solid red;*/
 			}
-			.purchase .purchasecont{
+			
+			.purchase .purchasecont {
 				width: 1188px;
 				height: 100%;
 				margin: auto;
 				/*border: 1px solid red;*/
 				position: relative;
 			}
-			.purchasecont .img1{
+			
+			.purchasecont .img1 {
 				width: 190px;
 				height: 90px;
 				float: left;
 			}
-			.purchasecont .img2{
+			
+			.purchasecont .img2 {
 				width: 160px;
 				height: 100px;
 			}
-			.purchasecont .hunt{
+			
+			.purchasecont .hunt {
 				width: 550px;
 				height: 100px;
 				/*border: 1px solid red;*/
@@ -243,31 +253,36 @@
 				top: 0;
 				left: 360px;
 			}
-			.hunt .huntcont{
+			
+			.hunt .huntcont {
 				width: 550px;
 				height: 42px;
 				margin-top: 28px;
 				/*border: 1px solid red;*/
 			}
-			.huntcont .hunt1{
+			
+			.huntcont .hunt1 {
 				width: 430px;
 				height: 38px;
 				float: left;
 				border: 2px solid #FF9900;
 			}
-			.hunt1 .iconfont{
+			
+			.hunt1 .iconfont {
 				font-size: 14px;
 				float: left;
 				margin-top: 10px;
 				margin-left: 10px;
 			}
-			.hunt1 input{
+			
+			.hunt1 input {
 				margin-top: 7px;
 				margin-left: 16px;
 				width: 90%;
 				border: 0;
 			}
-			.huntcont .huntbtn{
+			
+			.huntcont .huntbtn {
 				float: right;
 				width: 116px;
 				height: 42px;
@@ -276,28 +291,32 @@
 				font-size: 18px;
 				color: #FFFFFF;
 			}
-			.hunt li a{
+			
+			.hunt li a {
 				float: left;
 				font-size: 12px;
 				margin-right: 10px;
 				margin-top: 6px;
 				color: #A8B6D1;
 			}
-			.purchasecont .img3{
+			
+			.purchasecont .img3 {
 				width: 80px;
 				height: 80px;
 				position: absolute;
 				top: 8px;
 				right: 0;
 			}
-			.classify{
+			
+			.classify {
 				width: 1180px;
 				height: 40px;
 				/*border: 1px solid red;*/
 				margin: auto;
 				overflow: hidden;
 			}
-			.classify .classifygoods{
+			
+			.classify .classifygoods {
 				width: 190px;
 				height: 100%;
 				background: #FF9900;
@@ -305,47 +324,57 @@
 				float: left;
 				color: #FFFFFF;
 			}
-			.classifygoods .iconfont{
+			.classify .classifygoods:hover{
+				background: #f80;
+			}
+			.classifygoods .iconfont {
 				float: left;
 				margin-top: 12px;
 				margin-left: 8px;
 			}
-			.classifygoods h3{
+			
+			.classifygoods h3 {
 				float: left;
 				margin-left: 6px;
 				margin-top: 11px;
 			}
-			.classify .classifycont{
+			
+			.classify .classifycont {
 				width: 900px;
 				height: 100%;
 				float: left;
 				/*border: 1px solid red;*/
 			}
-			.classify .classifycont1{
+			
+			.classify .classifycont1 {
 				width: 220px;
 				height: 100%;
 				float: left;
 				/*border: 1px solid red;*/
 				font-size: 14px;
 			}
-			.classifycont1 ul{
+			
+			.classifycont1 ul {
 				margin-top: 10px;
 				height: 14px;
-				border-right:2px solid  #EEE5DD ;
+				border-right: 2px solid #EEE5DD;
 			}
-			.classifycont1 li a{
+			
+			.classifycont1 li a {
 				color: #FF6600;
 				float: left;
 				margin-left: 25px;
 			}
-			.classify .classifycont2{
+			
+			.classify .classifycont2 {
 				height: 100%;
 				float: left;
 				/*border: 1px solid red;*/
 				font-size: 14px;
 				position: relative;
 			}
-			.classifycont2 .classifyimg{
+			
+			.classifycont2 .classifyimg {
 				width: 16px;
 				height: 16px;
 				/*border: 1px solid red;*/
@@ -354,29 +383,36 @@
 				left: 328px;
 				background: url(img/suning2.png) no-repeat -20px 0;
 			}
-			.classifycont2 ul{
+			
+			.classifycont2 ul {
 				margin-top: 10px;
 				height: 14px;
 			}
-			.classifycont2 li{
+			
+			.classifycont2 li {
 				float: left;
 				margin-left: 32px;
 			}
-			.classifycont2 li a:hover{
+			
+			.classifycont2 li a:hover {
 				color: #FF6600;
 			}
-			.cont .dynamicimage{
+			
+			.cont .dynamicimage {
 				width: 100%;
 				height: 440px;
 				background: #09046B;
 			}
-			.dynamicimage .dynamicimagecont{
+			
+			.dynamicimage .dynamicimagecont {
 				width: 1182px;
 				height: 100%;
 				/*border: 1px solid red;*/
 				margin: auto;
+				position: relative;
 			}
-			.dynamicimagecont .category{
+			
+			.dynamicimagecont .category {
 				width: 190px;
 				height: 100%;
 				float: left;
@@ -384,31 +420,39 @@
 				color: #776A54;
 				font-size: 13px;
 			}
-			.category li{
+			
+			.category li {
 				line-height: 30px;
 			}
-			.category .iconfont{
+			
+			.category .iconfont {
 				color: #FEA900;
 				font-size: 16px;
 				margin-left: 8px;
 			}
-			.category li:hover{
+			
+			.category li:hover {
 				background: #FEFEFE;
 			}
-			.category li:hover a{
+			
+			.category li:hover a {
 				color: black;
 			}
-			.category a{
-				color:white;
+			
+			.category a {
+				color: white;
 			}
+			
 			.category li a:hover {
 				color: #FEA900;
 			}
-			.dynamicimagecont .iphone{
+			
+			.dynamicimagecont .iphone {
 				float: left;
 				position: relative;
 			}
-			.iphone .clickleft{
+			
+			.iphone .clickleft {
 				width: 30px;
 				height: 64px;
 				position: absolute;
@@ -416,7 +460,8 @@
 				left: 0;
 				background: url(img/suning2.png) no-repeat 0 -18px;
 			}
-			.iphone .clickright{
+			
+			.iphone .clickright {
 				width: 30px;
 				height: 64px;
 				position: absolute;
@@ -424,7 +469,8 @@
 				top: 180px;
 				background: url(img/suning2.png) no-repeat -37px -18px;
 			}
-			.iphone .iphone1{
+			
+			.iphone .iphone1 {
 				width: 150px;
 				height: 213px;
 				position: absolute;
@@ -433,21 +479,53 @@
 				font-size: 13px;
 				background: #D2D5DB;
 			}
-			 .img-name{
+			
+			#content {
+				position: relative;
+				width: 830px;
+				height: 440px;
+				overflow: hidden;
+			}
+			
+			#content ul {
+				position: absolute;
+				bottom: 15px;
+				overflow: hidden;
+				left: 280px;
+				bottom: 30px;
+			}
+			
+			#content li {
+				height: 20px;
+				width: 20px;
+				float: left;
+				border-radius: 50%;
+				background: white;
+				margin-left: 10px;
+			}
+			
+			#content ul li.active {
+				background: #D49825;
+			}
+			
+			.img-name {
 				margin-top: 22px;
 				margin-left: 18px;
 			}
-			 .img-name1{
+			
+			.img-name1 {
 				color: #89668C;
 				margin-left: 18px;
 				margin-top: 3px;
 			}
-			 .img-image{
+			
+			.img-image {
 				width: 140px;
 				height: 140px;
 				margin-top: 10px;
 			}
-			.iphone .iphone2{
+			
+			.iphone .iphone2 {
 				width: 150px;
 				height: 213px;
 				position: absolute;
@@ -456,34 +534,40 @@
 				font-size: 13px;
 				background: #D2D5DB;
 			}
-			.dynamicimagecont .dynamicimage-right{
+			
+			.dynamicimagecont .dynamicimage-right {
 				width: 160px;
 				height: 100%;
 				background: #FFFFFF;
 				float: right;
 			}
-			.dynamicimage-right .rightfirst{
+			
+			.dynamicimage-right .rightfirst {
 				width: 100%;
 				height: 170px;
-				font-size:13px ;
+				font-size: 13px;
 				border-bottom: 1px solid #ccc;
 			}
-			.rightfirst .rightfirstimg{
+			
+			.rightfirst .rightfirstimg {
 				width: 70px;
 				height: 70px;
 				margin-left: 45px;
 				/*border: 1px solid red;*/
 				background: url(img/suning2.png) no-repeat -90px -20px;
 			}
-			.info{
+			
+			.info {
 				text-align: center;
 				margin-top: 8px;
 			}
-			.btn{
-				margin: 10px 6px ;
+			
+			.btn {
+				margin: 10px 6px;
 				height: 26px;
 			}
-			.btn .enter{
+			
+			.btn .enter {
 				text-align: center;
 				line-height: 25px;
 				display: block;
@@ -493,7 +577,8 @@
 				color: #FFFFFF;
 				float: left;
 			}
-			.btn .newtype{
+			
+			.btn .newtype {
 				text-align: center;
 				line-height: 25px;
 				display: block;
@@ -503,11 +588,13 @@
 				color: #FF9900;
 				float: right;
 			}
-			.btn1{
+			
+			.btn1 {
 				margin: 2px;
 				height: 26px;
 			}
-			.btn1 .drill{
+			
+			.btn1 .drill {
 				float: left;
 				display: block;
 				line-height: 25px;
@@ -515,15 +602,18 @@
 				height: 26px;
 				/*border: 1px solid red;*/
 			}
-			.iconfont.icon-zhuanshi{
+			
+			.iconfont.icon-zhuanshi {
 				color: #31C3FC;
 				float: left;
 			}
-			.iconfont.icon-more{
+			
+			.iconfont.icon-more {
 				float: right;
 				color: #CCCCCC;
 			}
-			.btn1 .coupon{
+			
+			.btn1 .coupon {
 				float: right;
 				display: block;
 				line-height: 25px;
@@ -531,30 +621,37 @@
 				height: 26px;
 				/*border: 1px solid red;*/
 			}
-			.iconfont.icon-qian{
-				color: red;	
+			
+			.iconfont.icon-qian {
+				color: red;
 				margin-right: 4px;
 			}
-			.dynamicimage-right li{
+			
+			.dynamicimage-right li {
 				margin: 18px 10px;
 			}
-			.dynamicimage-right li{
+			
+			.dynamicimage-right li {
 				font-size: 13px;
 				line-height: 20px;
 			}
-			.dynamicimage-right li:hover a{
+			
+			.dynamicimage-right li:hover a {
 				color: #FF9900;
 			}
-			.dynamicimage-right i{
+			
+			.dynamicimage-right i {
 				font-style: normal;
 				color: #FF9900;
 			}
-			.rightbelow{
+			
+			.rightbelow {
 				width: 100%;
 				height: 150px;
 				/*border: 1px solid red;*/
 			}
-			.rightbelow .belowone{
+			
+			.rightbelow .belowone {
 				display: block;
 				float: left;
 				width: 52px;
@@ -564,75 +661,96 @@
 				border-top: 1px solid #CCCCCC;
 				border-right: 1px solid #CCCCCC;
 			}
-			.belowone .iconfont{
-				font-size:30px ;
+			
+			.belowone .iconfont {
+				font-size: 30px;
 			}
-			.belowone p{
+			
+			.belowone p {
 				font-size: 12px;
 				margin-top: 5px;
 			}
-			.belowone p:hover{
+			
+			.belowone p:hover {
 				color: #FF9900;
 			}
-			.cont .bigpoly{
+			
+			.cont .bigpoly {
 				width: 100%;
 				height: 305px;
 				margin-top: 20px;
 			}
-			.bigpoly .bigpolycont{
+			
+			.bigpoly .bigpolycont {
 				width: 1182px;
 				height: 100%;
 				background: #FFFFFF;
 				/*border: 1px solid red;*/
 				margin: auto;
 			}
-			.bigpolycont .bigpolyheder{
+			
+			.bigpolycont .bigpolyheder {
 				width: 100%;
 				height: 45px;
 				/*border: 1px solid red;*/
 				color: #FFFFFF;
 			}
-			.bigpolyheder .hederleft{
+			
+			.bigpolyheder .hederleft {
 				width: 175px;
 				height: 100%;
 				float: left;
 				padding-left: 15px;
 				background: #DD2827;
 			}
-			.hederleft span{
+			
+			.hederleft span {
 				font-size: 22px;
 				line-height: 40px;
 			}
-			.hederleft i{
+			
+			.hederleft i {
 				font-style: normal;
-				letter-spacing:3px ;
+				letter-spacing: 3px;
 			}
-			.bigpolyheder .right-more{
+			
+			.bigpolyheder .right-more {
 				background: #DD2827;
 				color: #FFFFFF;
 				width: 115px;
 				font-size: 12px;
 				float: right;
-				border-radius:10px ;
+				border-radius: 10px;
 				line-height: 22px;
 				margin-top: 10px;
+				position: relative;
 			}
-			.right-more span{
+			
+			.right-more span {
 				margin-left: 15px;
 			}
-			.bigpolycont .contimg{
+			
+			.right-more .iconfont {
+				position: absolute;
+				right: 10px;
+				top: 2px;
+			}
+			
+			.bigpolycont .contimg {
 				width: 100%;
 				height: 256px;
 				border-top: 2px solid red;
 			}
-			.contimg .contimg1{
+			
+			.contimg .contimg1 {
 				width: 1000px;
 				height: 100%;
 				float: left;
 				position: relative;
 				/*border: 1px solid red;*/
 			}
-			.contimg1 .contimg1left{
+			
+			.contimg1 .contimg1left {
 				position: absolute;
 				left: 0;
 				top: 60px;
@@ -640,7 +758,8 @@
 				height: 64px;
 				background: url(img/suning2.png) 0 -20px;
 			}
-			.contimg1 .contimg1right{
+			
+			.contimg1 .contimg1right {
 				position: absolute;
 				top: 60px;
 				right: 10px;
@@ -648,20 +767,24 @@
 				height: 64px;
 				background: url(img/suning2.png) -37px -20px;
 			}
-			.contimg1 .contimg2{
+			
+			.contimg1 .contimg2 {
 				width: 200px;
 				height: 100%;
 				float: left;
 				position: relative;
 				/*border: 1px solid red;*/
+				-webkit-transition: all 1s; 
 			}
-			.contimg2 .imgb1{
+			
+			.contimg2 .imgb1 {
 				width: 160px;
 				height: 160px;
 				margin-top: 20px;
 				margin-left: 15px;
 			}
-			.contimg2 .imgtext{
+			
+			.contimg2 .imgtext {
 				font-size: 12px;
 				overflow: hidden;
 				height: 30px;
@@ -669,28 +792,34 @@
 				width: 180px;
 				margin-top: 8px;
 			}
-			.contimg2 .imgmoney{
+			
+			.contimg2 .imgmoney {
 				width: 160px;
 				margin-left: 10px;
 			}
-			.imgmoney .imgmoney1{
+			
+			.imgmoney .imgmoney1 {
 				color: #FF792F;
 				font-size: 16px;
 			}
-			.imgmoney1 .iconfont{
+			
+			.imgmoney1 .iconfont {
 				font-size: 10px;
 				float: left;
 				margin-top: 5px;
 			}
-			.imgmoney .imgmoney2{
+			
+			.imgmoney .imgmoney2 {
 				color: #CCCCCC;
 				font-size: 13px;
 				text-decoration: line-through;
 			}
-			.imgmoney2 .iconfont{
+			
+			.imgmoney2 .iconfont {
 				font-size: 10px;
 			}
-			.contimg2 .imgline{
+			
+			.contimg2 .imgline {
 				height: 140px;
 				position: absolute;
 				top: 20px;
@@ -698,7 +827,8 @@
 				width: 1px;
 				background: #eee;
 			}
-			.contimg .contimgright{
+			
+			.contimg .contimgright {
 				width: 176px;
 				height: 240px;
 				float: right;
@@ -706,11 +836,13 @@
 				margin-top: 8px;
 				/*border: 1px solid red;*/
 			}
-			.cont .select{
+			
+			.cont .select {
 				width: 100%;
 				height: 386px;
 			}
-			.select .select1{
+			
+			.select .select1 {
 				width: 1190px;
 				height: 100%;
 				/*border: 1px solid red;*/
@@ -718,52 +850,60 @@
 				margin-top: 20px;
 				/*background: #FFFFFF;*/
 			}
-			.select1 .selectleft{
+			
+			.select1 .selectleft {
 				width: 590px;
 				height: 100%;
 				float: left;
 				/*border: 1px solid red;*/
 			}
-			.selectleft .selecthedr{
+			
+			.selectleft .selecthedr {
 				width: 100%;
 				height: 45px;
 				background: #479DAE;
 				font-size: 12px;
 				overflow: hidden;
 			}
-			.selecthedr .hedrname{
+			
+			.selecthedr .hedrname {
 				color: #FFFFFF;
 				font-size: 16px;
 				margin: 12px;
 				float: left;
 			}
-			.selecthedr .hederight{
+			
+			.selecthedr .hederight {
 				float: right;
 				margin-top: 12px;
 				display: block;
 				color: #FFFFFF;
 			}
-			.selectleft .selectcont{
+			
+			.selectleft .selectcont {
 				width: 100%;
 				height: 338px;
 				/*border: 1px solid red;*/
 				overflow: hidden;
 			}
-			.selectcont .selectcontleft{
+			
+			.selectcont .selectcontleft {
 				width: 189px;
 				height: 100%;
 				float: left;
 				position: relative;
 				border-right: 1px solid #CCCCCC;
 				font-size: 12px;
-			}	
-			.contleftcont .leftcontimg{
+			}
+			
+			.contleftcont .leftcontimg {
 				width: 160px;
 				height: 160px;
 				float: left;
 				margin: 40px 0 0 15px;
 			}
-			.contleftcont .lefttext{
+			
+			.contleftcont .lefttext {
 				width: 155px;
 				height: 18px;
 				overflow: hidden;
@@ -771,28 +911,33 @@
 				padding-top: 10px;
 				border-top: 1px solid #eee;
 			}
-			.contleftcont .lefttext1{
+			
+			.contleftcont .lefttext1 {
 				width: 155px;
 				height: 34px;
 				overflow: hidden;
-				margin:10px 0 0 17px;
+				margin: 10px 0 0 17px;
 				color: #999;
 			}
-			.contleftcont .lefttext2{
+			
+			.contleftcont .lefttext2 {
 				width: 155px;
 				height: 18px;
 				margin: 10px 0 0 17px;
 				color: #999;
 			}
-			.lefttext2 i{
+			
+			.lefttext2 i {
 				color: #65abb9;
 				font-style: normal;
 			}
-			.selectcont{
+			
+			.selectcont {
 				background: #FFFFFF;
 				position: relative;
 			}
-			.selectcont .selectcontright{
+			
+			.selectcont .selectcontright {
 				width: 200px;
 				height: 100px;
 				/*border: 1px solid red;*/
@@ -804,73 +949,88 @@
 			/*.contrightcont{
 				position: relative;
 			}*/
-			.contrightcont .rightcontimg{
+			
+			.contrightcont .rightcontimg {
 				width: 80px;
 				height: 80px;
 				margin: 20px 0 0 10px;
 				float: left;
 			}
-			.contrightcont .righttext{
+			
+			.contrightcont .righttext {
 				float: left;
 				width: 76px;
 				height: 28px;
 				overflow: hidden;
 				margin: 20px 0 0 10px;
 			}
-			.contrightcont .righttext1{
+			
+			.contrightcont .righttext1 {
 				float: left;
 				width: 76px;
-			    height: 18px;
-			    margin: 4px 0 0 10px;
-			    color: #999;
+				height: 18px;
+				margin: 4px 0 0 10px;
+				color: #999;
 			}
-			.righttext1 i{
+			
+			.righttext1 i {
 				color: #65abb9;
 				font-style: normal;
 			}
-			.selectleft.right{
+			
+			.selectleft.right {
 				margin-left: 10px;
 			}
-			.selecthedr.right{
+			
+			.selecthedr.right {
 				background: #A25784;
 			}
-			.selecthedr .navcont{
+			
+			.selecthedr .navcont {
 				float: left;
 				color: #FFFFFF;
 				margin-top: 13px;
 				margin-left: 40px;
 			}
-			.navcont li{
+			
+			.navcont li {
 				float: left;
 				margin-right: 20px;
 				padding-bottom: 3px;
 			}
-			.navcont li:hover{
+			
+			.navcont li:hover {
 				border-bottom: 2px solid #FFFFFF;
 			}
-			.lefttext1.right{
+			
+			.lefttext1.right {
 				color: #000000;
 			}
-			.lefttext2.right{
+			
+			.lefttext2.right {
 				color: #A25784;
 				font-size: 14px;
 			}
-			.lefttext2.right i{
+			
+			.lefttext2.right i {
 				color: #A25784;
 				font-size: 10px;
 				float: left;
 				margin-top: 3px;
 			}
-			.righttext1.right{
+			
+			.righttext1.right {
 				color: #A25784;
 			}
-			.righttext1.right i{
+			
+			.righttext1.right i {
 				color: #A25784;
 				font-size: 10px;
 				float: left;
 				margin-top: 2px;
 			}
-			.lefttop{
+			
+			.lefttop {
 				width: 36px;
 				height: 44px;
 				background: url(img/suning2.png) no-repeat -244px 0;
@@ -879,68 +1039,87 @@
 				top: 0;
 				left: 10px;
 			}
-			.lefttop1,.lefttop2,.lefttop3,.lefttop4,.lefttop5,.lefttop6{
+			
+			.lefttop1,
+			.lefttop2,
+			.lefttop3,
+			.lefttop4,
+			.lefttop5,
+			.lefttop6 {
 				width: 28px;
 				height: 37px;
 				position: absolute;
 				top: 0;
 				left: 10px;
 			}
-			.lefttop1{
+			
+			.lefttop1 {
 				background: url(img/suning2.png) no-repeat -297px 0;
 			}
-			.lefttop2{
+			
+			.lefttop2 {
 				background: url(img/suning2.png) no-repeat -344px 0;
 			}
-			.lefttop3{
+			
+			.lefttop3 {
 				background: url(img/suning2.png) no-repeat -248px -48px;
 			}
-			.lefttop4{
+			
+			.lefttop4 {
 				background: url(img/suning2.png) no-repeat -281px -48px;
 			}
-			.lefttop5{
+			
+			.lefttop5 {
 				background: url(img/suning2.png) no-repeat -315px -43px;
 			}
-			.lefttop6{
+			
+			.lefttop6 {
 				background: url(img/suning2.png) no-repeat -346px -48px;
 			}
-			.selecthedr.left1{
+			
+			.selecthedr.left1 {
 				background: #FF9900;
 			}
-			.sale{
+			
+			.sale {
 				width: 160px;
 				height: 30px;
 				overflow: hidden;
 				margin: 15px 0 0 20px;
 				font-size: 19px;
 			}
-			.robcoupons{
+			
+			.robcoupons {
 				width: 160px;
 				height: 22px;
 				overflow: hidden;
 				margin: 0 0 0 20px;
 				color: #f60;
 			}
-			.leftcontimg1{
+			
+			.leftcontimg1 {
 				width: 180px;
 				height: 160px;
 				margin-top: 10px;
 			}
-			.contleftcont1 .text1{
+			
+			.contleftcont1 .text1 {
 				width: 64px;
 				height: 24px;
 				overflow: hidden;
 				font-size: 16px;
 				margin: 24px 0 0 20px;
 			}
-			.contleftcont1 .text2{
+			
+			.contleftcont1 .text2 {
 				width: 64px;
 				height: 20px;
 				overflow: hidden;
 				margin: 0 0 0 20px;
 				color: #FF6600;
 			}
-			.contleftcont1 img{
+			
+			.contleftcont1 img {
 				position: absolute;
 				display: block;
 				width: 80px;
@@ -948,37 +1127,44 @@
 				right: 15px;
 				bottom: 10px;
 			}
-			.selecthedr.right1{
+			
+			.selecthedr.right1 {
 				background: #DD5A79;
 			}
-			.selectcont .speity{
+			
+			.selectcont .speity {
 				float: left;
 				width: 264px;
 				margin: 20px 0 0 30px;
 				/*border: 1px solid red;*/
 			}
-			.speity .bath{
+			
+			.speity .bath {
 				margin-bottom: 8px;
 				font-size: 12px;
 				float: left;
 			}
-			.bath p{
+			
+			.bath p {
 				float: left;
-				background:#DD5A79;
+				background: #DD5A79;
 				padding: 0 10px;
 				border-radius: 10px;
 				color: #FFFFFF;
 				margin-right: 7px;
 			}
-			.bath span{
+			
+			.bath span {
 				float: left;
 			}
-			.speity img{
+			
+			.speity img {
 				width: 110px;
 				height: 110px;
 				margin-right: 10px;
 			}
-			.selectline{
+			
+			.selectline {
 				height: 100%;
 				width: 1px;
 				background: #CCCCCC;
@@ -986,14 +1172,16 @@
 				top: 0;
 				left: 50%;
 			}
-			.cont .overseaspurchase{
+			
+			.cont .overseaspurchase {
 				width: 1190px;
 				height: 310px;
 				margin: auto;
 				margin-top: 20px;
 				/*border: 1px solid red;*/
 			}
-			.overseaspurchase .colorpurple{
+			
+			.overseaspurchase .colorpurple {
 				width: 287px;
 				height: 150px;
 				background: #9263DE;
@@ -1001,148 +1189,175 @@
 				position: relative;
 				float: left;
 				margin: 0 10px 10px 0;
+				-webkit-transition: all 1s; 
 			}
-			.colorpurple .title{
+			
+			.colorpurple .title {
 				height: 32px;
 				color: #FFF;
 				margin: 37px 0 0 20px;
 				font-size: 16px;
 			}
-			.colorpurple .desc{
+			
+			.colorpurple .desc {
 				height: 30px;
 				margin-left: 20px;
 				color: #FFF;
 				font-size: 13px;
 			}
-			.purpleimg{
+			
+			.purpleimg {
 				width: 160px;
 				height: 150px;
 				position: absolute;
 				top: 0;
 				right: 0;
 			}
-			.colorpurple.bule{
+			
+			.colorpurple.bule {
 				background: #3F51C4;
 				margin-left: 6px;
-				
 			}
-			.colorpurple.green{
+			
+			.colorpurple.green {
 				background: #30ABA3;
 				margin-left: 2px;
 			}
-			.colorpurple.bule1{
+			
+			.colorpurple.bule1 {
 				background: #3182E8;
 				float: right;
 				margin-right: 0;
 			}
-			.colorpurple.pink{
+			
+			.colorpurple.pink {
 				background: #F55176;
 			}
-			.colorpurple.orange{
+			
+			.colorpurple.orange {
 				background: #FF6501;
 				margin-left: 6px;
-				
 			}
-			.colorpurple.red{
+			
+			.colorpurple.red {
 				background: #F55151;
 				margin-left: 2px;
 			}
-			.colorpurple.green1{
+			
+			.colorpurple.green1 {
 				background: #36AE75;
 				float: right;
 				margin-right: 0;
 			}
-			.cont .threeimg{
+			
+			.cont .threeimg {
 				width: 1190px;
 				height: 100px;
 				margin: auto;
 				/*border: 1px solid red;*/
 			}
-			.threeimg1{
+			
+			.threeimg1 {
 				width: 396px;
 				height: 100px;
 				float: left;
 			}
-			.threeimg2{
+			
+			.threeimg2 {
 				width: 396px;
 				height: 100px;
 				float: left;
 			}
-			.threeimg3{
+			
+			.threeimg3 {
 				width: 396px;
 				height: 100px;
 				float: left;
 			}
-			.cont .hotmobile{
+			
+			.cont .hotmobile {
 				width: 1190px;
 				height: 565px;
 				margin: auto;
 				/*border: 1px solid red;*/
 				margin-top: 20px;
 			}
-			.mobileleft{
+			
+			.mobileleft {
 				float: left;
 				width: 590px;
 				height: 565px;
 				background: #FFF;
 				border-top: 2px solid #33ae75;
 				box-shadow: 0 0 8px #eee;
+				position: relative;
 			}
-			.mobileleft .mobilehedr{
+			
+			.mobileleft .mobilehedr {
 				background: #f0f7f4;
 				width: 100%;
 				height: 45px;
 			}
-			.hedrleft{
+			
+			.hedrleft {
 				float: left;
 				width: 190px;
 				height: 45px;
 				background: #33ae75;
 				color: #FFFFFF;
 			}
-			.mobilename{
+			
+			.mobilename {
 				margin-left: 15px;
 				float: left;
-				font-size:18px ;
+				font-size: 18px;
 				line-height: 40px;
 			}
-			.hedrleft .iconfont{
+			
+			.hedrleft .iconfont {
 				margin-top: 6px;
 				float: left;
 				margin-left: 8px;
 				font-size: 24px;
 			}
-			.hedrright{
+			
+			.hedrright {
 				float: right;
 				margin: 14px 18px 0 0;
 				font-size: 14px;
 			}
-			.hedrright a{
+			
+			.hedrright a {
 				float: left;
 				margin-left: 20px;
 				color: #666;
 			}
-			.hedrright a:hover{
+			
+			.hedrright a:hover {
 				color: #FF9900;
 			}
-			.mobilecont{
+			
+			.mobilecont {
 				width: 100%;
 				height: 360px;
 				/*border: 1px solid red;*/
 			}
-			.mobileimg{
+			
+			.mobileimg {
 				float: left;
 				position: relative;
 				width: 190px;
 				height: 360px;
 				/*border: 1px solid red;*/
 			}
-			.mobileimg1{
+			
+			.mobileimg1 {
 				display: block;
 				width: 190px;
 				height: 360px;
 			}
-			.transparentbox{
+			
+			.transparentbox {
 				position: absolute;
 				width: 190px;
 				height: 90px;
@@ -1151,7 +1366,8 @@
 				opacity: 0.6;
 				background: #33ae75;
 			}
-			.mobileimg .boxtext{
+			
+			.mobileimg .boxtext {
 				position: absolute;
 				color: #FFF;
 				top: 285px;
@@ -1161,7 +1377,8 @@
 				overflow: hidden;
 				font-size: 22px;
 			}
-			.boxtext1{
+			
+			.boxtext1 {
 				position: absolute;
 				top: 320px;
 				left: 14px;
@@ -1171,14 +1388,17 @@
 				overflow: hidden;
 				font-size: 12px;
 			}
-			.mobilecont1{
+			
+			.mobilecont1 {
 				position: relative;
 				float: left;
 				width: 400px;
 				height: 360px;
 				overflow: hidden;
+				-webkit-transition: all 1s;
 			}
-			.mobilecont1 li{
+			
+			.mobilecont1 li {
 				width: 199px;
 				height: 179px;
 				float: left;
@@ -1186,24 +1406,29 @@
 				border-bottom: 1px solid #CCCCCC;
 				text-align: center;
 			}
-			.mobilecont1 .conttext{
+			
+			.mobilecont1 .conttext {
 				margin: 14px auto 5px;
 				font-size: 16px;
 			}
-			.mobilecont1 .conttext1{
+			
+			.mobilecont1 .conttext1 {
 				margin: 0 auto;
 				color: #33ae75;
 				font-size: 12px;
 			}
-			.mobilecont1 img{
+			
+			.mobilecont1 img {
 				width: 120px;
 				height: 120px;
 				margin: 0 auto;
 			}
-			.mobilecont1 .rightboer{
+			
+			.mobilecont1 .rightboer {
 				border-right: 0;
 			}
-			.mobilecont2 li{
+			
+			.mobilecont2 li {
 				width: 190px;
 				height: 110px;
 				border-right: 1px solid #CCCCCC;
@@ -1211,17 +1436,21 @@
 				float: left;
 				font-size: 12px;
 				position: relative;
+				-webkit-transition: all 1s;
 			}
-			.cont2text{
+			
+			.cont2text {
 				margin-top: 30px;
 				margin-left: 20px;
 			}
-			.cont2text1{
+			
+			.cont2text1 {
 				margin-top: 5px;
 				margin-left: 20px;
 				color: #33ae75;
 			}
-			.mobilecont2 img{
+			
+			.mobilecont2 img {
 				width: 80px;
 				height: 80px;
 				position: absolute;
@@ -1229,126 +1458,152 @@
 				right: 15px;
 				display: block;
 			}
-			.cont2padd{
-				padding-right:8px ;
+			
+			.cont2padd {
+				padding-right: 8px;
 			}
-			.cont2padd.bor{
+			
+			.cont2padd.bor {
 				border-right: none;
 			}
-			.contlogo{
+			
+			.contlogo {
 				width: 100%;
 				height: 40px;
 				overflow: hidden;
 			}
-			.contlogo img{
+			
+			.contlogo img {
 				margin: 5px 9px 0;
 				display: block;
 				width: 80px;
 				height: 30px;
 				float: left;
 			}
-			.mobileleft.rigt{
+			
+			.mobileleft.rigt {
 				margin-left: 10px;
 			}
-			.cont .ativimg{
+			
+			.cont .ativimg {
 				width: 1190px;
 				height: 90px;
 				/*border: 1px solid red;*/
-				margin:20px  auto 0;
+				margin: 20px auto 0;
 			}
-			.ativimg img{
+			
+			.ativimg img {
 				width: 1190px;
 				height: 90px;
 			}
-			.cont .household{
+			
+			.cont .household {
 				width: 1190px;
 				height: 458px;
 				margin: 20px auto 0;
 				background: #FFFFFF;
 			}
-			.household .househedr{
+			
+			.household .househedr {
 				width: 100%;
 				border-top: 2px solid #5F6CB7;
 				height: 47px;
 				background: #EFF0F8;
 			}
-			.househedrleft{
+			
+			.househedrleft {
 				width: 190px;
 				height: 100%;
 				float: left;
 				background: #5F6CB7;
 				color: #FFFFFF;
+				position: relative;
 			}
-			.housemame{
+			
+			.housemame {
 				margin-top: 10px;
 				float: left;
 				font-size: 18px;
 				margin-left: 15px;
 			}
-			.househedrleft .iconfont{
+			
+			.househedrleft .iconfont {
 				float: left;
 				font-size: 24px;
 				line-height: 46px;
 				margin-left: 10px;
 			}
-			.househedrright{
+			
+			.househedrright {
 				float: right;
 				margin: 14px 18px 0 0;
 			}
-			.househedrright a{
+			
+			.househedrright a {
 				float: right;
 				color: #666666;
 				margin-left: 20px;
-				font-size: 14px;	
+				font-size: 14px;
 			}
-			.house{
+			
+			.house {
 				background: #848AAF;
 			}
-			.conttext1.house1{
+			
+			.conttext1.house1 {
 				color: #5F84D0;
 			}
-			.righthouse{
+			
+			.righthouse {
 				margin-left: 10px;
 			}
-			.house2{
+			
+			.house2 {
 				width: 190px;
 				height: 360px;
 			}
-			.housetext{
+			
+			.housetext {
 				color: #5f6cb7;
 				position: absolute;
 				top: 15px;
 				left: 21px;
 				font-size: 20px;
 			}
-			.housetext1{
+			
+			.housetext1 {
 				color: #5f6cb7;
 				position: absolute;
 				top: 42px;
 				left: 21px;
 				font-size: 12px;
 			}
-			.cont .live{
+			
+			.cont .live {
 				width: 1190px;
 				margin: 20px auto 0;
 				/*border: 1px solid red;*/
 			}
-			.livehedr{
-				font-size:20px;
+			
+			.livehedr {
+				font-size: 20px;
 				padding: 0 10px;
-				border-left:2px solid #FE9901;
+				border-left: 2px solid #FE9901;
 			}
-			.livecont{
+			
+			.livecont {
 				width: 1188px;
 				height: 340px;
 				margin-top: 8px;
 				border: 1px solid #eee;
 				background: #FFF;
 			}
-			.livecont ul{
+			
+			.livecont ul {
 				margin-left: 19px;
 			}
-			.livecont li{
+			
+			.livecont li {
 				position: relative;
 				float: left;
 				width: 222px;
@@ -1356,17 +1611,20 @@
 				margin: 19px 10px 0 0;
 				/*border: 1px solid red;*/
 			}
-			.livecont a{
+			
+			.livecont a {
 				width: 222px;
 				height: 222px;
 				display: block;
 				/*border: 1px solid red;*/
 			}
-			.livecont a img{
+			
+			.livecont a img {
 				width: 222px;
 				height: 222px;
 			}
-			.livecolor{
+			
+			.livecolor {
 				position: absolute;
 				width: 222px;
 				height: 222px;
@@ -1374,8 +1632,9 @@
 				top: 0;
 				background: #000;
 				opacity: 0.3;
-			} 
-			.mark{
+			}
+			
+			.mark {
 				position: absolute;
 				width: 64px;
 				height: 64px;
@@ -1383,7 +1642,8 @@
 				left: 82px;
 				background: url(img/suning2.png) -176px 0;
 			}
-			.playback{
+			
+			.playback {
 				width: 65px;
 				height: 18px;
 				position: absolute;
@@ -1392,13 +1652,15 @@
 				color: #FFF;
 				background: url(img/suning2.png) -1px -215px;
 			}
-			.introduce{
+			
+			.introduce {
 				width: 222px;
 				height: 68px;
 				padding-top: 12px;
 				background: #3c3432;
 			}
-			.state{
+			
+			.state {
 				width: 200px;
 				height: 18px;
 				margin: 0 auto;
@@ -1407,21 +1669,25 @@
 				white-space: nowrap;
 				text-overflow: ellipsis;
 			}
-			.state a{
+			
+			.state a {
 				color: #FFFFFF;
 				font-size: 12px;
 			}
-			.state a:hover{
+			
+			.state a:hover {
 				color: #FE9901;
 			}
-			.introduceimg{
+			
+			.introduceimg {
 				float: left;
 				width: 25px;
 				height: 25px;
 				border-radius: 50%;
 				margin: 11px 10px 0 15px;
 			}
-			.livename{
+			
+			.livename {
 				float: left;
 				width: 84px;
 				height: 18px;
@@ -1432,17 +1698,20 @@
 				white-space: nowrap;
 				text-overflow: ellipsis;
 			}
-			.livepeo{
+			
+			.livepeo {
 				float: right;
 				margin: 13px 10px 0 0;
 				color: #999;
 				font-size: 12px;
 			}
-			.livepeo span{
+			
+			.livepeo span {
 				margin-left: 3px;
 				color: #e98b05;
 			}
-			.back{
+			
+			.back {
 				position: absolute;
 				width: 42px;
 				height: 18px;
@@ -1453,22 +1722,26 @@
 				font-size: 12px;
 				background: url(img/suning2.png) -55px -100px;
 			}
-			.cont .guesslike{
+			
+			.cont .guesslike {
 				width: 1190px;
 				margin: 20px auto 0;
 				/*border: 1px solid red;*/
 				position: relative;
 				overflow: hidden;
 			}
-			.guesslike .likecont{
+			
+			.guesslike .likecont {
 				width: 100%;
 				margin-top: 8px;
 				padding: 1px 0;
 				background: #EEE;
 				overflow: hidden;
 				border-top: 1px solid #CCCCCC;
+				-webkit-transition: all 1s;
 			}
-			.likecont li{
+			
+			.likecont li {
 				width: 236px;
 				height: 319px;
 				margin: 1px 0 0 1px;
@@ -1478,13 +1751,15 @@
 				border-right: 1px solid #CCCCCC;
 				border-bottom: 1px solid #CCCCCC;
 			}
-			.likecont img{
+			
+			.likecont img {
 				width: 200px;
 				height: 200px;
 				margin: 20px auto 0;
 				display: block;
 			}
-			.title{
+			
+			.title {
 				width: 193px;
 				height: 36px;
 				margin: 15px auto 5px;
@@ -1492,21 +1767,20 @@
 				word-break: break-all;
 				font-size: 12px;
 			}
-			.title:hover{
-				color: #FE9901;
-			}
-			.price{
+			.price {
 				float: left;
 				margin-left: 20px;
 				color: #F60;
 			}
-			.price i{
+			
+			.price i {
 				float: left;
 				margin-top: 4px;
 				font-size: 11px;
 				font-style: normal;
 			}
-			.tip{
+			
+			.tip {
 				float: left;
 				background: #fe9901;
 				color: #FFF;
@@ -1518,7 +1792,8 @@
 				border-radius: 2px;
 				font-size: 12px;
 			}
-			.guesslike .end{
+			
+			.guesslike .end {
 				position: relative;
 				width: 112px;
 				height: 22px;
@@ -1526,7 +1801,8 @@
 				color: #CCC;
 				margin: 15px auto;
 			}
-			.line-left{
+			
+			.line-left {
 				position: absolute;
 				left: -97px;
 				bottom: 11px;
@@ -1534,7 +1810,8 @@
 				height: 1px;
 				background: #CCC;
 			}
-			.line-right{
+			
+			.line-right {
 				position: absolute;
 				right: -97px;
 				bottom: 11px;
@@ -1542,93 +1819,111 @@
 				height: 1px;
 				background: #CCC;
 			}
-			.cont .footer{
+			
+			.cont .footer {
 				width: 100%;
 				min-height: 300px;
 				margin: auto;
 				border-top: 1px solid #CCCCCC;
 			}
-			.footer1{
+			
+			.footer1 {
 				width: 1190px;
 				height: 100%;
 				margin: auto;
 				border: 1px solid rred;
 			}
-			.footerhedr{
+			
+			.footerhedr {
 				width: 100%;
 				height: 96px;
 				border-bottom: 1px solid #CCCCCC;
 			}
-			.footerhedr li{
+			
+			.footerhedr li {
 				width: 238px;
 				height: 100%;
 				float: left;
 			}
-			.footerhedr img{
+			
+			.footerhedr img {
 				float: left;
 				width: 48px;
 				height: 48px;
 				margin-top: 15px;
 			}
 			
-			.footerhedr a{
+			.footerhedr a {
 				float: left;
 				margin-top: 15px;
 				margin-left: 10px;
 			}
-			.footerhedr a:hover{
+			
+			.footerhedr a:hover {
 				color: #F60;
 			}
-			.footerhedr p{
+			
+			.footerhedr p {
 				float: left;
 				line-height: 24px;
 				color: #545454;
 				font-size: 14px;
 				margin-left: 10px;
 			}
-			.footimg{
+			
+			.footimg {
 				padding-left: 10px;
 			}
-			.footimg1{
+			
+			.footimg1 {
 				padding-left: 20px;
 			}
-			.footimg2{
+			
+			.footimg2 {
 				padding-left: 30px;
 			}
-			.footimg3{
+			
+			.footimg3 {
 				padding-left: 40px;
 			}
-			.footcont{
+			
+			.footcont {
 				width: 100%;
 				height: 180px;
-				/*border: 1px solid red;*/
 			}
-			.footcont ul{
+			
+			.footcont ul {
 				float: left;
 				margin-right: 150px;
 				height: 100%;
 			}
-			.footcont a{
+			
+			.footcont a {
 				color: #555555;
 			}
-			.footcont a:hover{
+			
+			.footcont a:hover {
 				color: #FFAA03;
 			}
-			.footcont li{
+			
+			.footcont li {
 				padding-bottom: 5px;
 				font-size: 12px;
 			}
-			.footcont .guide{
+			
+			.footcont .guide {
 				padding: 10px 0;
 				font-size: 14px;
 				color: #000000;
 			}
-			.footcont1{
+			
+			.footcont1 {
 				float: left;
 				height: 180px;
 				width: 90px;
 			}
-			.footcont1 p{
+			
+			.footcont1 p {
 				width: 100%;
 				line-height: 40px;
 				font-weight: 700;
@@ -1638,333 +1933,355 @@
 				margin-bottom: 5px;
 				overflow: hidden;
 			}
-			.footcont1 a{
+			
+			.footcont1 a {
 				font-size: 12px;
 			}
-			.footcont1 a :hover{
+			
+			.footcont1 a :hover {
 				color: #FFAA03;
 			}
-			.cont .foottwo{
+			
+			.cont .foottwo {
 				width: 100%;
 				height: 168px;
 				background: #FFFFFF;
 				overflow: hidden;
 			}
-			.foottwo .foottwocont{
+			
+			.foottwo .foottwocont {
 				width: 1190px;
 				height: 100%;
 				margin: auto;
 				/*border: 1px solid red;*/
 				font-size: 12px;
 			}
-			.foottwocont ul{
+			
+			.foottwocont ul {
 				width: 1190px;
 				margin-top: 18px;
 				height: 12px;
 			}
-			.foottwocont li{
+			
+			.foottwocont li {
 				float: left;
 				margin-right: 10px;
 			}
-			.foottwocont li a{
+			
+			.foottwocont li a {
 				color: #666;
 			}
-			.foottwocont span{
+			
+			.foottwocont span {
 				margin-left: 4px;
 			}
-			.foottwocont .twocont{
+			
+			.foottwocont .twocont {
 				margin-top: 10px;
 			}
-			.twocont.two{
+			
+			.twocont.two {
 				color: #888;
 			}
-			.twocont.two a{
+			
+			.twocont.two a {
 				color: #888;
 			}
-			.footlogo{
+			
+			.footlogo {
 				width: 990px;
 				float: left;
 				height: 25px;
 				margin-top: 12px;
 			}
-			.footlogo a{
+			
+			.footlogo a {
 				display: inline-block;
 				margin-right: 8px;
 			}
-			.sidebar{
-				width: 35px;
-				height: 100%;
-				background: #383838;
-				position: fixed;
-				right: 0;
-				top: 0;
-				text-align: center;
-			}
-			.sidebar .iconfont{
-				width: 35px;
-				height: 30px;
-				color: #BD8411;
-			}
-			.sidebar .bar1{
-				margin-top: 182px;
-			}
-			.sidebar .bar2{
-				margin: 12px 3px;
-				float: left;
-				padding: 10px 4px;
-				width: 20px;
-				border-top: 1px solid #FFFFFF;
-				border-bottom: 1px solid #FFFFFF;
-				font-size: 12px;
-			}
-			.iconfont.icon-gouwuche{
-				color: #FFFFFF;
-			}
-			.bartip{
-				color: #FFFFFF;
-			}
-			.barnum{
-				display: inline-block;
-				min-width: 17px;
-				height: 15px;
-				padding: 0 2px;
-				background-color: #D00;
-				color: #FFF;
-				line-height: 15px;
-				border-radius: 5px;
-			}
-			.sidebar .bar3{
-				margin-bottom: 66px;
-			}
-			.sidebar .bar4{
-				margin-bottom: 15px;
-			}
-			.bar5{
-				position: absolute;
-				bottom: 135px;
-				left: 10px;
-			}
-			.bar6{
-				position: absolute;
-				bottom: 100px;
-				left: 10px;
-			}
-			.bar7{
-				position: absolute;
-				bottom: 64px;
-				left: 10px;
-			}
-			.bar8{
-				position: absolute;
-				bottom: 30px;
-				left: 10px;
-			}
-			.brai1n{
+			
+			.brai1n {
 				border-color: #2EABA3;
 			}
-			.mobilehedr.brai2n{
+			
+			.mobilehedr.brai2n {
 				background: #ECF5F5;
 			}
-			.brain{
+			
+			.brain {
 				background: #50928B;
 			}
-			.transparentbox.brain1{
+			
+			.transparentbox.brain1 {
 				background: #7CC0B7;
 			}
-			.brain2,.conttext1.brain2{
+			
+			.brain2,
+			.conttext1.brain2 {
 				color: #2eaba3;
 			}
-			.boxtext.appliances{
+			
+			.boxtext.appliances {
 				font-size: 20px;
 			}
-			.digita1l{
-				border-color:#3299CC;
+			
+			.digita1l {
+				border-color: #3299CC;
 			}
-			.mobilehedr.digita2l{
+			
+			.mobilehedr.digita2l {
 				background: #EFF7FB;
 			}
-			.digital{
+			
+			.digital {
 				background: #3299CC;
 			}
-			.transparentbox.digital1{
+			
+			.transparentbox.digital1 {
 				background: #2C6A8A;
 			}
-			.digital2,.conttext1.digital2{
+			
+			.digital2,
+			.conttext1.digital2 {
 				color: #3299cc;
 			}
-			.ca1r{
+			
+			.ca1r {
 				border-color: #558CCF;
 			}
-			.mobilehedr.ca2r{
+			
+			.mobilehedr.ca2r {
 				background: #EDF1F7;
 			}
-			.car{
+			
+			.car {
 				background: #558CCF;
 			}
-			.transparentbox.car1{
+			
+			.transparentbox.car1 {
 				background: #8FB9DA;
 			}
-			.car2,.conttext1.car2{
+			
+			.car2,
+			.conttext1.car2 {
 				color: #558CCF;
 			}
-			.homeap1p{
-				border-color:#C96B2C ;
+			
+			.homeap1p {
+				border-color: #C96B2C;
 			}
-			.mobilehedr.homeap2p{
+			
+			.mobilehedr.homeap2p {
 				background: #FBF3EE;
 			}
-			.homeapp{
+			
+			.homeapp {
 				background: #C96B2C;
 			}
-			.transparentbox.homeapp1{
+			
+			.transparentbox.homeapp1 {
 				background: #DE986E;
 			}
-			.homeapp2,.conttext1.homeapp2{
-				color:#C96B2C ;
+			
+			.homeapp2,
+			.conttext1.homeapp2 {
+				color: #C96B2C;
 			}
-			.material1s{
-				border-color:#B15641;
+			
+			.material1s {
+				border-color: #B15641;
 			}
-			.materials{
-				background:#B15641;
+			
+			.materials {
+				background: #B15641;
 			}
-			.mobilehedr.material2s{
+			
+			.mobilehedr.material2s {
 				background: #F9F2F0;
 			}
-			.transparentbox.materials1{
+			
+			.transparentbox.materials1 {
 				background: #965D4F;
 			}
-			.materials2,.conttext1.materials2{
-				color:#B15641 ;
+			
+			.materials2,
+			.conttext1.materials2 {
+				color: #B15641;
 			}
-			.househedr.tast1y{
+			
+			.househedr.tast1y {
 				border-color: #E96F1E;
 				background: #FDF4ED;
 			}
-			.tasty{
-				background:#E96F1E ;
+			
+			.tasty {
+				background: #E96F1E;
 			}
-			.transparentbox.house.tasty1{
-				background:#9B4F1C;
+			
+			.transparentbox.house.tasty1 {
+				background: #9B4F1C;
 			}
-			.tasty2,.conttext1.tasty2{
+			
+			.tasty2,
+			.conttext1.tasty2 {
 				color: #E96F1E;
 			}
-			.mothe1r{
+			
+			.mothe1r {
 				border-color: #E87272;
 			}
-			.mobilehedr.mothe2r{
+			
+			.mobilehedr.mothe2r {
 				background: #FDF1F1;
 			}
-			.mother{
+			
+			.mother {
 				background: #E87272;
 			}
-			.transparentbox.mother1{
-				background:#E87272;
+			
+			.transparentbox.mother1 {
+				background: #E87272;
 			}
-			.mother2,.conttext1.mother2{
+			
+			.mother2,
+			.conttext1.mother2 {
 				color: #E87272;
 			}
-			.makeu1p{
+			
+			.makeu1p {
 				border-color: #E7658C;
 			}
-			.mobilehedr.makeu2p{
+			
+			.mobilehedr.makeu2p {
 				background: #FDEFF3;
 			}
-			.makeup{
+			
+			.makeup {
 				background: #E7658C;
 			}
-			.transparentbox.makeup1{
+			
+			.transparentbox.makeup1 {
 				background: #E7658C;
 			}
-			.makeup2,.conttext1.makeup2{
+			
+			.makeup2,
+			.conttext1.makeup2 {
 				color: #E7658C;
 			}
-			.dres1s{
+			
+			.dres1s {
 				border-color: #9A6392;
 			}
-			.mobilehedr.dres2s{
+			
+			.mobilehedr.dres2s {
 				background: #F7F3F6;
 			}
-			.dress{
+			
+			.dress {
 				background: #9A6392;
 			}
-			.transparentbox.dress1{
+			
+			.transparentbox.dress1 {
 				background: #956572;
 			}
-			.dress2,.conttext1.dress2{
-				color:#9A6392 ;
+			
+			.dress2,
+			.conttext1.dress2 {
+				color: #9A6392;
 			}
-			.outdoo1r{
+			
+			.outdoo1r {
 				border-color: #76639A;
 			}
-			.mobilehedr.outdoo2r{
+			
+			.mobilehedr.outdoo2r {
 				background: #F4F3F7;
 			}
-			.outdoor{
+			
+			.outdoor {
 				background: #76639A;
 			}
-			.transparentbox.outdoor1{
+			
+			.transparentbox.outdoor1 {
 				background: #A297B8;
 			}
-			.outdoor2,.conttext1.outdoor2{
+			
+			.outdoor2,
+			.conttext1.outdoor2 {
 				color: #76639A;
 			}
-			.financia1l{
+			
+			.financia1l {
 				border-color: #B87B1B;
 			}
-			.mobilehedr.financia2l{
+			
+			.mobilehedr.financia2l {
 				background: #F9F5ED;
 			}
-			.financial{
+			
+			.financial {
 				background: #B87B1B;
 			}
-			.transparentbox.financial1{
+			
+			.transparentbox.financial1 {
 				background: #D29724;
 			}
-			.financial2,.conttext1.financial2{
+			
+			.financial2,
+			.conttext1.financial2 {
 				color: #B87B1B;
 			}
-			.rea1d{
+			
+			.rea1d {
 				border-color: #A16B46;
 			}
-			.mobilehedr.rea2d{
+			
+			.mobilehedr.rea2d {
 				background: #F8F3F0;
 			}
-			.read{
+			
+			.read {
 				background: #A16B46;
 			}
-			.transparentbox.read1{
+			
+			.transparentbox.read1 {
 				background: #B99F8F;
 			}
-			.read2,.conttext1.read2{
+			
+			.read2,
+			.conttext1.read2 {
 				color: #A16B46;
 			}
-			.cont .listing{
+			
+			.cont .listing {
 				width: 1190px;
-				height:385px ;
-				margin:20px auto 0;
+				height: 385px;
+				margin: 20px auto 0;
 				/*border: 1px solid red;*/
 			}
-			.listleft{
+			
+			.listleft {
 				width: 590px;
 				height: 100%;
 				float: left;
 				background: #FFFFFF;
 			}
-			.listlefthd{
+			
+			.listlefthd {
 				width: 100%;
 				height: 46px;
 				background: #FFAA01;
 				color: #FFFFFF;
 			}
-			.listlefthd h5{
+			
+			.listlefthd h5 {
 				float: left;
 				line-height: 46px;
 				padding-left: 15px;
 				font-size: 20px;
 			}
-			.listlefthd a{
+			
+			.listlefthd a {
 				float: right;
 				margin: 15px 10px 0 0;
 				color: #FFF;
@@ -1972,45 +2289,54 @@
 				cursor: pointer;
 				text-decoration: none;
 			}
-			.listlefthd a span{
+			
+			.listlefthd a span {
 				display: inline-block;
 				vertical-align: middle;
 				text-decoration: none;
 			}
-			.listlefthd a i{
+			
+			.listlefthd a i {
 				display: inline-block;
 				vertical-align: middle;
 				width: 6px;
 				height: 9px;
 				margin-left: 8px;
-				background:url(img/suning2.png) -73px -37px ;
+				background: url(img/suning2.png) -73px -37px;
 			}
-			.listleft .list{
+			
+			.listleft .list {
+				-webkit-transition: all 1s;
 				margin-left: 20px;
 			}
-			.listleft .list1{
+			
+			.listleft .list1 {
 				float: left;
 				width: 270px;
 				height: 134px;
 				margin: 18px 15px 6px 0;
 			}
-			.list1 a{
+			
+			.list1 a {
 				display: block;
 				width: 100%;
 				height: 100%;
 				text-decoration: none;
 				cursor: pointer;
 			}
-			.list1 .listname{
+			
+			.list1 .listname {
 				width: 240px;
 				height: 18px;
 				overflow: hidden;
 				font-size: 13px;
 			}
-			.list1 .listname:hover{
+			
+			.list1 .listname:hover {
 				color: #FFAA01;
 			}
-			.list1 .listinfo{
+			
+			.list1 .listinfo {
 				width: 240px;
 				height: 16px;
 				overflow: hidden;
@@ -2018,7 +2344,8 @@
 				color: #999;
 				font-size: 12px;
 			}
-			.list1 .listinfo span{
+			
+			.list1 .listinfo span {
 				display: inline-block;
 				padding: 0 5px;
 				color: #FFF;
@@ -2026,62 +2353,74 @@
 				margin-right: 6px;
 				background: #fe9b00;
 			}
-			.list1 .listinfo i{
+			
+			.list1 .listinfo i {
 				font-style: normal;
 				color: #999;
 				font-size: 12px;
 			}
-			.list1 img{
+			
+			.list1 img {
 				float: left;
 				width: 85px;
 				height: 85px;
 				margin: 10px 5px 0 0;
 			}
-			.rights{
+			
+			.rights {
 				margin-left: 10px;
 			}
-			.listdown{
+			
+			.listdown {
 				position: relative;
 				width: 100%;
 				height: 339px;
 				overflow: hidden;
 			}
-			.listdown1{
+			
+			.listdown1 {
 				position: relative;
 				width: 530px;
 				height: 300px;
 				margin: 30px 0 0 30px;
 				overflow: hidden;
 			}
-			.listdown1 ul{
+			
+			.listdown1 ul {
 				position: absolute;
 				left: 0;
 				top: 0;
-				width: 4000px;
+				width: 800px;
 				height: 300px;
 			}
-			.listdown1 li{
+			
+			.listdown1 li {
 				position: relative;
 				float: left;
 				width: 160px;
 				margin-right: 25px;
+				/*border: 1px solid red;*/
 			}
-			.listdown1 i{
+			
+			.listdown1 i {
 				font-style: normal;
 			}
-			.listdown1 img{
+			
+			.listdown1 img {
 				display: block;
 				width: 160px;
 				height: 160px;
 			}
-			.listdown1 .listname1{
+			
+			.listdown1 .listname1 {
 				width: 100%;
 				height: 36px;
 				margin-top: 18px;
 				overflow: hidden;
 				font-size: 12px;
 			}
-			.listdown1 .listname2{
+			
+			.listdown1 .listname2 {
 				width: 100%;
 				height: 21px;
 				line-height: 20px;
@@ -2091,26 +2430,29 @@
 				color: #FFF;
 				background: #F90;
 			}
-			.listdown1 .listname3{
+			
+			.listdown1 .listname3 {
 				float: left;
 				color: #999;
 				margin-top: 10px;
 				font-size: 12px;
 			}
-			.listdown1 .listnum{
+			
+			.listdown1 .listnum {
 				float: right;
 				color: #999;
 				margin-top: 10px;
 				font-size: 12px;
 			}
-	</style>
+		</style>
 	</head>
+
 	<body>
 		<div class="cont">
 			<!--头部图片-->
 			<div class="love">
 				<div class="loveimg">
-					<img src="img/suning1.png"/>
+					<img src="img/suning1.png" />
 				</div>
 				<img class="close" src="img/suning3_03.png" />
 			</div>
@@ -2124,60 +2466,331 @@
 								<span>网站导航</span>
 								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="navleft1cont">
+								<dl class="sn-site-list">
+									<dt>特色购物</dt>
+									<dd>
+										<p>
+											<a href="">苏宁互联</a>
+										</p>
+										<p>
+											<a href="">苏宁达人</a>
+										</p>
+										<p>
+											<a href="">苏宁V购</a>
+										</p>
+										<p>
+											<a href="">苏宁卡</a>
+										</p>
+										<p>
+											<a href="">海外购</a>
+										</p>
+										<p>
+											<a href="">
+												大聚惠
+												<i class="iconfont icon-re"></i>
+											</a>
+										</p>
+										<p>
+											<a href="">视频购物</a>
+										</p>
+										<p>
+											<a href="">办公直通车</a>
+										</p>
+										<p>
+											<a href="">以旧换新</a>
+										</p>
+										<p>
+											<a href="">二手优品</a>
+										</p>
+										<p>
+											<a href="">领券中心</a>
+										</p>
+										<p>
+											<a href="">香港苏宁</a>
+										</p>
+									</dd>
+								</dl>
+								<dl class="sn-site-list">
+									<dt>主题频道</dt>
+									<dd>
+										<p>
+											<a href="">电器城</a>
+										</p>
+										<p>
+											<a href="">苏宁超市</a>
+										</p>
+										<p>
+											<a href="">手机</a>
+										</p>
+										<p>
+											<a href="">运动馆</a>
+										</p>
+										<p>
+											<a href="">图书</a>
+										</p>
+										<p>
+											<a href="">
+												红孩子母婴
+											</a>
+										</p>
+										<p>
+											<a href="">美妆个护</a>
+										</p>
+										<p>
+											<a href="">电脑</a>
+										</p>
+										<p>
+											<a href="">服装城</a>
+										</p>
+										<p>
+											<a href="">智能生活</a>
+										</p>
+										<p>
+											<a href="">家装馆</a>
+										</p>
+										<p>
+											<a href="">汽车用品</a>
+										</p>
+										<p>
+											<a href="">
+												苏宁热卖
+												<i class="iconfont icon-re"></i>
+											</a>
+										</p>
+										<p>
+											<a href="">排行榜</a>
+										</p>
+									</dd>
+								</dl>
+								<dl class="sn-site-list">
+									<dt>生活助手</dt>
+									<dd>
+										<p>
+											<a href="">
+												零钱宝
+												<i class="iconfont icon-re"></i>
+											</a>
+										</p>
+										<p>
+											<a href="">手机充值</a>
+										</p>
+										<p>
+											<a href="">火车票</a>
+										</p>
+										<p>
+											<a href="">转账还款</a>
+										</p>
+										<p>
+											<a href="">约服务</a>
+										</p>
+										<p>
+											<a href="">水电煤</a>
+										</p>
+										<p>
+											<a href="">保险</a>
+										</p>
+										<p>
+											<a href="">机票</a>
+										</p>
+										<p>
+											<a href="">门店查询</a>
+										</p>
+									</dd>
+								</dl>
+								<dl class="sn-site-list">
+									<dt>会员服务</dt>
+									<dd>
+										<p>
+											<a href="">
+												会员联盟
+												<i class="iconfont icon-re"></i>
+											</a>
+										</p>
+										<p>
+											<a href="">延时保修</a>
+										</p>
+										<p>
+											<a href="">免费书城</a>
+										</p>
+										<p>
+											<a href="">易付宝</a>
+										</p>
+										<p>
+											<a href="">苏宁理财</a>
+										</p>
+										<p>
+											<a href="">苏宁金融</a>
+										</p>
+									</dd>
+								</dl>
+								<dl class="sn-site-list">
+									<dt>更多热点</dt>
+									<dd>
+										<p>
+											<a href="">pptv</a>
+										</p>
+										<p>
+											<a href="">客户端</a>
+										</p>
+										<p>
+											<a href="">
+												商家入驻
+												<i class="iconfont icon-re"></i>
+											</a>
+										</p>
+										<p>
+											<a href="">苏宁众包</a>
+										</p>
+										<p>
+											<a href="">苏宁联盟</a>
+										</p>
+										<p>
+											<a href="">用户体验</a>
+										</p>
+										<p>
+											<a href="">公益频道</a>
+										</p>
+										<p>
+											<a href="">校园先锋</a>
+										</p>
+										<p>
+											<a href="">苏宁加盟</a>
+										</p>
+										<p>
+											<a href="">苏宁云</a>
+										</p>
+										<p>
+											<a href="">苏宁足球</a>
+										</p>
+									</dd>
+								</dl>
+							</div>
 						</div>
 						<div class="navleft2">
 							<a class="navnl2" href="">
 								<span>商家入驻</span>
 								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="navleft2cont">
+								<a href="">服务市场</a>
+								<a href="">金融中心</a>
+								<a href="">商家论坛</a>
+								<a href="">培训中心</a>
+								<a href="">增值服务</a>
+							</div>
 						</div>
 					</div>
 					<div class="navright">
 						<div class="navright1">
 							<a class="navr1" href="">请登录</a>
 							<a class="navr2" href="">
-									注册有礼
+								注册有礼
 								<i class="iconfont">&#xe63c;</i>
 							</a>
 						</div>
-						<div class="navright2">
-							<a class="navr3" href="">
+						<div class="navright2 indent">
+							<a class="navr3 indent1" href="">
 								<span>我的订单</span>
 								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="navright2cont">
+								<a href="">待支付</a>
+								<a href="">待收货</a>
+								<a href="">待评价</a>
+								<a href="">修改订单</a>
+							</div>
 						</div>
-						<div class="navright2">
-							<a class="navr3" href="">
+						<div class="navright2 tesco">
+							<a class="navr3 tesco1" href="">
 								<span>我的易购</span>
 								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="tescocont">
+								<div class="tescoimg">
+									<a class="headimg" href="">
+										<img src="img/tesco.jpg"/>
+									</a>
+									<div class="tescoimg1">
+										<a class="login" href="">请登录</a>
+										<a class="daka" href="">点击打卡</a>
+									</div>
+								</div>
+								<a href="">我的二手</a>
+								<a href="">我的收藏</a>
+								<a href="">我的金融</a>
+								<a href="">
+									苏宁会员
+									<i class="iconfont icon-zhuanshi"></i>
+								</a>
+								<a href="">我的任性付</a>
+								<a href="">我的优惠券</a>
+							</div>
 						</div>
-						<a class="navr4" href="">
-							<i class="iconfont icon-jianyingorder"></i>
-							<span>购物车 0</span>
-						</a>
-						<div class="navright2">
-							<a class="navr3 navr" href="">
-								<span>易付宝</span>
+						<div class="shopping_cart">
+							<a class="navr4" href="">
+								<i class="iconfont icon-jianyingorder"></i>
+								<span>购物车 0</span>
+								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="cartcont">
+								<div class="cartcont1">
+									<a href="">
+										<button>登录</button>
+									</a>
+								</div>
+							</div>
 						</div>
-						<div class="navright2">
-							<a class="navr3" href="">
+						<a class="easy_pay" href="">
+							<span>易付宝</span>
+						</a>
+						<div class="navright2 service">
+							<a class="navr3 service1" href="">
 								<span>客户服务</span>
 								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="serve">
+								<a href="">苏宁帮客</a>
+								<a href="">帮助中心</a>
+								<a href="">查找门店</a>
+								<a href="">退换/维修</a>
+								<a href="">建议反馈</a>
+								<a href="">
+									<span>在线咨询</span>
+									<i class="iconfont icon-zaixianzixun"></i>
+								</a>
+							</div>
 						</div>
-						<div class="navright2 navr">
-							<a class="navr3 " href="">
-								<span>企业采购</span>
-							</a>
-						</div>
+						<a class="enterment" href="">
+							<span>企业采购</span>
+						</a>
 						<div class="navright3">
 							<a class="navr5" href="">
 								<i class="iconfont icon-shouji"></i>
 								<span>手机苏宁</span>
 								<i class="iconfont">&#xe653;</i>
 							</a>
+							<div class="navright3cont">
+								<ul>
+									<li>
+										<img src="img/index.png"/>
+										<p>下载苏宁易购APP</p>
+										<img class="aoyun-text" src="img/index1.png"/>
+									</li>
+									<li>
+										<img src="img/index2.png"/>
+										<p>扫一扫</p>
+										<p>下载苏宁金融APP</p>
+									</li>
+									<li>
+										<img src="img/index3.png"/>
+										<p>扫一扫</p>
+										<p>关注苏宁易购服务号</p>
+									</li>
+								</ul>
+								<div class="line"></div>
+								<div class="line lineTwo"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2192,7 +2805,7 @@
 						<div class="huntcont">
 							<div class="hunt1">
 								<i class="iconfont">&#xe67a;</i>
-								<input type="text" name="" id="" value="" placeholder="input"/>
+								<input type="text" name="" id="" value="" placeholder="请输入内容" />
 							</div>
 							<button class="huntbtn">搜索</button>
 						</div>
@@ -2242,7 +2855,7 @@
 							<li>
 								<a href="">生鲜</a>
 							</li>
-						</ul>	
+						</ul>
 					</div>
 					<div class="classifycont2">
 						<div class="classifyimg"></div>
@@ -2268,7 +2881,7 @@
 							<li>
 								<a href="">苏宁会员</a>
 							</li>
-						</ul>	
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -2367,20 +2980,170 @@
 								<a href="#">保险</a>
 							</li>
 						</ul>
+						<div class="index-sort-detail">
+							<div class="sort-btn">
+								<a href="">电器城</a>
+								<a href="">手机频道</a>
+								<a href="">智能数码</a>
+								<a href="">以旧换新</a>
+								<a href="">网上营业厅</a>
+								<a href="">企业采购</a>
+								<a href="">海外购</a>
+							</div>
+							<div class="cate-list">
+								<dl>
+									<dt>
+										<a href="">手机通讯</a>
+									</dt>
+									<dd>
+										<a class="orange" href="">【苹果7仅4688抢先定】</a>
+										<a href="">全部手机</a>
+										<a href="">iPhone</a>
+										<a class="orange" href="">小米</a>
+										<a href="">荣耀</a>
+										<a href="">华为</a>
+										<a class="orange" href="">三星</a>
+										<a href="">魅族</a>
+										<a href="">oppo</a>
+										<a href="">vivo</a>
+										<a href="">美图</a>
+										<a href="">努比亚</a>
+										<a href="">若基亚</a>
+										<a href="">飞利浦</a>
+										<a href="">乐视</a>
+										<a href="">联想</a>
+										<a href="">锤子</a>
+										<a class="orange" href="">好店热卖</a>
+										<a href="">以旧换新</a>
+										<a href="">拍照手机</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="">手机配件</a>
+									</dt>
+									<dd>
+										<a class="orange" href="">【手机配件满48减25】</a>
+										<a href="">苹果周边</a>
+										<a href="">手机壳</a>
+										<a href="">手机贴膜</a>
+										<a href="">手机内存卡</a>
+										<a href="">移动电源</a>
+										<a href="">数据线</a>
+										<a href="">充电器</a>
+										<a class="orange" href="">蓝牙耳机</a>
+										<a href="">手机支架</a>
+										<a href="">自拍杆</a>
+										<a href="">手机耳机</a>
+										<a href="">蓝牙音箱</a>
+										<a href="">手机u盘</a>
+										<a href="">手机电池</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="">智能设备</a>
+									</dt>
+									<dd>
+										<a class="orange" href="">【智能摄像头99元起】</a>
+										<a class="orange" href="">【小天才儿童手表】</a>
+										<a href="">体感车</a>
+										<a href="">智能摄像头</a>
+										<a href="">智能手环</a>
+										<a href="">智能手表</a>
+										<a class="orange" href="">VR眼镜</a>
+										<a href="">智能门锁</a>
+										<a href="">无人机</a>
+										<a href="">智能机器人</a>
+										<a class="orange" href="">智能体质监测</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="">影音电子</a>
+									</dt>
+									<dd>
+										<a href="">运动耳机</a>
+										<a href="">耳机/耳麦</a>
+										<a href="">MP3/MP4</a>
+										<a href="">录音笔</a>
+										<a href="">收音/收音机</a>
+										<a href="">影音附件</a>
+										<a class="orange" href="">蓝牙音响</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="">电子教育</a>
+									</dt>
+									<dd>
+										<a href="">学生电脑</a>
+										<a href="">点读机/点读笔</a>
+										<a href="">学习机</a>
+										<a href="">电子书</a>
+										<a href="">儿童手表</a>
+										<a href="">学生手机</a>
+										<a href="">电子词典</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="">苏宁互联</a>
+									</dt>
+									<dd>
+										<a class="orange" href="">【30元抢靓号】</a>
+										<a href="">选号入网</a>
+										<a href="">靓号中心</a>
+										<a href="">互联特权</a>
+										<a href="">至简20元</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										<a href="">营业厅</a>
+									</dt>
+									<dd>
+										<a class="orange" href="">【买手机送流量】</a>
+										<a href="">选号码</a>
+										<a href="">办套餐</a>
+										<a href="">宽带</a>
+										<a href="">充值</a>
+										<a href="">中国移动</a>
+										<a href="">中国联通</a>
+										<a href="">中国电信</a>
+										<a href="">购机送费</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
 					</div>
 					<div class="iphone">
-						<img src="img/suning6.png" />
-						<div class="clickleft"></div>
-						<div class="clickright"></div>
+						<a href="">
+							<div id="content">
+								<img id="pic" src="img/a.jpg" />
+								<ul id="list">
+									<li class="active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div class="clickleft"></div>
+								<div class="clickright"></div>
+							</div>
+						</a>
 						<a class="iphone1">
 							<p class="img-name">就要宠自己</p>
 							<p class="img-name1">520任性爱 就现在</p>
-							<img class="img-image" src="img/suning7.png"/>
+							<img class="img-image" src="img/suning7.png" />
 						</a>
 						<a class="iphone2">
 							<p class="img-name">三星S8 稀缺新品</p>
 							<p class="img-name1">每日10:00 限量开抢</p>
-							<img class="img-image" src="img/qwe.png"/>
+							<img class="img-image" src="img/qwe.png" />
 						</a>
 					</div>
 					<div class="dynamicimage-right">
@@ -2408,16 +3171,14 @@
 							<li>
 								<p>
 									<a>
-										<i>[划算]</i>
-										5月17日全民电信日主流手机大幅下降
+										<i>[划算]</i> 5月17日全民电信日主流手机大幅下降
 									</a>
 								</p>
 							</li>
 							<li>
 								<p>
 									<a>
-										<i>[划算]</i>
-										5月17日全民电信日主流手机大幅下降
+										<i>[划算]</i> 5月17日全民电信日主流手机大幅下降
 									</a>
 								</p>
 							</li>
@@ -2467,83 +3228,103 @@
 					</div>
 					<div class="contimg">
 						<div class="contimg1">
-							<div class="contimg2">
-								<img class="imgb1" src="img/suning8.png" />
-								<p class="imgtext">海尔(Haier)60升遥控式电热水器EC6005-T+ 3D速热 开机即洗 内胆自检测</p>
-								<p class="imgmoney">
-									<span class="imgmoney1">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>1999.00</em>
-									</span>
-									<span class="imgmoney2">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>2999.00</em>
-									</span>
-								</p>
-								<div class="imgline"></div>
-							</div>
+							<a href="">
+								<div class="contimg2">
+									<a href="">
+										<img class="imgb1" src="img/suning8.png" />
+										<p class="imgtext">海尔(Haier)60升遥控式电热水器EC6005-T+ 3D速热 开机即洗 内胆自检测</p>
+									</a>
+									<p class="imgmoney">
+										<span class="imgmoney1">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>1999.00</em>
+										</span>
+										<span class="imgmoney2">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>2999.00</em>
+										</span>
+									</p>
+									<div class="imgline"></div>
+								</div>
+							</a>
 							<div class="contimg1left">
 								<a href=""></a>
 							</div>
-							<div class="contimg2">
-								<img class="imgb1" src="img/suning10.png" />
-								<p class="imgtext">格力（GEEE）电风扇FDE-40家静音定时摇头落地扇机械升</p>
-								<p class="imgmoney">
-									<span class="imgmoney1">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>149.00</em>
-									</span>
-									<span class="imgmoney2">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>269.00</em>
-									</span>
-								</p>
-								<div class="imgline"></div>
-							</div>
-							<div class="contimg2">
-								<img class="imgb1" src="img/suning9.png" />
-								<p class="imgtext">直降800！苹果/APPLE iPhone 6 32GB 金色 苹果6 全网通4G手机</p>
-								<p class="imgmoney">
-									<span class="imgmoney1">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>2586.00</em>
-									</span>
-									<span class="imgmoney2">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>3399.00</em>
-									</span>
-								</p>
-								<div class="imgline"></div>
-							</div>
-							<div class="contimg2">
-								<img class="imgb1" src="img/suning11.png" />
-								<p class="imgtext">【苏宁自营】帮宝适（Pampers）超薄干爽婴儿纸尿裤/尿不湿 中号M192片（6-11kg）（国产）</p>
-								<p class="imgmoney">
-									<span class="imgmoney1">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>209.00</em>
-									</span>
-									<span class="imgmoney2">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>268.30</em>
-									</span>
-								</p>
-								<div class="imgline"></div>
-							</div>
-							<div class="contimg2">
-								<img class="imgb1" src="img/suning12.png" />
-								<p class="imgtext">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g/袋</p>
-								<p class="imgmoney">
-									<span class="imgmoney1">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>9.90</em>
-									</span>
-									<span class="imgmoney2">
-										<i class="iconfont">&#xf00aa;</i>
-										<em>29.00</em>
-									</span>
-								</p>
-							</div>
+							<a href="">
+								<div class="contimg2">
+									<a href="">
+										<img class="imgb1" src="img/suning10.png" />
+										<p class="imgtext">格力（GEEE）电风扇FDE-40家静音定时摇头落地扇机械升</p>
+									</a>
+									<p class="imgmoney">
+										<span class="imgmoney1">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>149.00</em>
+										</span>
+										<span class="imgmoney2">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>269.00</em>
+										</span>
+									</p>
+									<div class="imgline"></div>
+								</div>
+							</a>
+							<a href="">
+								<div class="contimg2">
+									<a href="">
+										<img class="imgb1" src="img/suning9.png" />
+										<p class="imgtext">直降800！苹果/APPLE iPhone 6 32GB 金色 苹果6 全网通4G手机</p>
+									</a>
+									<p class="imgmoney">
+										<span class="imgmoney1">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>2586.00</em>
+										</span>
+										<span class="imgmoney2">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>3399.00</em>
+										</span>
+									</p>
+									<div class="imgline"></div>
+								</div>
+							</a>
+							<a href="">
+								<div class="contimg2">
+									<a href="">
+										<img class="imgb1" src="img/suning11.png" />
+										<p class="imgtext">【苏宁自营】帮宝适（Pampers）超薄干爽婴儿纸尿裤/尿不湿 中号M192片（6-11kg）（国产）</p>
+									</a>
+									<p class="imgmoney">
+										<span class="imgmoney1">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>209.00</em>
+										</span>
+										<span class="imgmoney2">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>268.30</em>
+										</span>
+									</p>
+									<div class="imgline"></div>
+								</div>
+							</a>
+							<a href="">
+								<div class="contimg2">
+									<a href="">
+										<img class="imgb1" src="img/suning12.png" />
+										<p class="imgtext">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g/袋</p>
+									</a>
+									<p class="imgmoney">
+										<span class="imgmoney1">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>9.90</em>
+										</span>
+										<span class="imgmoney2">
+											<i class="iconfont">&#xf00aa;</i>
+											<em>29.00</em>
+										</span>
+									</p>
+								</div>
+							</a>
 							<div class="contimg1right">
 								<a href=""></a>
 							</div>
@@ -2571,8 +3352,7 @@
 									<p class="lefttext">帮宝适大号164片</p>
 									<p class="lefttext1">帮宝适超薄干爽纸尿裤尿不湿大号大码L164片，双重舒爽芯，让屁屁更加干爽；2倍弹力侧腰围，贴身、舒服</p>
 									<p class="lefttext2">
-										<i>86</i>
-										人说好
+										<i>86</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2581,8 +3361,7 @@
 									<img class="rightcontimg" src="img/suning14.png" />
 									<p class="righttext">五杀 四核i5 6500主机</p>
 									<p class="righttext1">
-										<i>693</i>
-										人说好
+										<i>693</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2591,8 +3370,7 @@
 									<img class="rightcontimg" src="img/suning15.png" />
 									<p class="righttext">烈焰战神U显卡</p>
 									<p class="righttext1">
-										<i>993</i>
-										人说好
+										<i>993</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2601,8 +3379,7 @@
 									<img class="rightcontimg" src="img/yuyu.png" />
 									<p class="righttext">苹果7p玫瑰金</p>
 									<p class="righttext1">
-										<i>4453</i>
-										人说好
+										<i>4453</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2611,8 +3388,7 @@
 									<img class="rightcontimg" src="img/yuyu1.png" />
 									<p class="righttext">小米2代触屏智能手环</p>
 									<p class="righttext1">
-										<i>577</i>
-										人说好
+										<i>577</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2621,8 +3397,7 @@
 									<img class="rightcontimg" src="img/suning18.png" />
 									<p class="righttext">宝宝灵活舒适每一步</p>
 									<p class="righttext1">
-										<i>69563</i>
-										人说好
+										<i>69563</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2631,8 +3406,7 @@
 									<img class="rightcontimg" src="img/yuyu2.png" />
 									<p class="righttext">苹果6玫瑰金</p>
 									<p class="righttext1">
-										<i>6943</i>
-										人说好
+										<i>6943</i> 人说好
 									</p>
 								</a>
 							</li>
@@ -2661,8 +3435,7 @@
 									<p class="lefttext"></p>
 									<p class="lefttext1 right">Apple iPhone 7 Plus 128GB 亮黑色 移动联通电信4G手机</p>
 									<p class="lefttext2 right">
-										<i>￥</i>
-										6588.00
+										<i>￥</i> 6588.00
 									</p>
 								</a>
 							</li>
@@ -2672,8 +3445,7 @@
 									<img class="rightcontimg" src="img/suning20.png" />
 									<p class="righttext">华为HUWEI P10</p>
 									<p class="righttext1 right">
-										<i>￥</i>
-										3788.00
+										<i>￥</i> 3788.00
 									</p>
 								</a>
 							</li>
@@ -2683,8 +3455,7 @@
 									<img class="rightcontimg" src="img/pp.png" />
 									<p class="righttext">三星 Galaxy S8（G9500）4G+ 64G 谜夜黑 全网通 4G手机</p>
 									<p class="righttext1 right">
-										<i>￥</i>
-										5688.00
+										<i>￥</i> 5688.00
 									</p>
 								</a>
 							</li>
@@ -2694,8 +3465,7 @@
 									<img class="rightcontimg" src="img/suning22.png" />
 									<p class="righttext">vivo X9 4GB+64GB内存 全网通4G 双卡双待 拍照手机 玫瑰金</p>
 									<p class="righttext1 right">
-										<i>￥</i>
-										2798.00
+										<i>￥</i> 2798.00
 									</p>
 								</a>
 							</li>
@@ -2705,8 +3475,7 @@
 									<img class="rightcontimg" src="img/pp1.png" />
 									<p class="righttext">小米 红米Note 4X 全网通版 4GB内存 64GB 香槟金</p>
 									<p class="righttext1 right">
-										<i>￥</i>
-										1299.00
+										<i>￥</i> 1299.00
 									</p>
 								</a>
 							</li>
@@ -2716,8 +3485,7 @@
 									<img class="rightcontimg" src="img/suning21.png" />
 									<p class="righttext">苹果(Apple) iPhone 6s Plus 32GB 金色 移动联通电信全网通4G手机</p>
 									<p class="righttext1 right">
-										<i>￥</i>
-										3999.00
+										<i>￥</i> 3999.00
 									</p>
 								</a>
 							</li>
@@ -2727,8 +3495,7 @@
 									<img class="rightcontimg" src="img/suning21.png" />
 									<p class="righttext">Apple iPhone 6 32GB 金色 移动联通电信4G手机</p>
 									<p class="righttext1 right">
-										<i>￥</i>
-										2688.00
+										<i>￥</i> 2688.00
 									</p>
 								</a>
 							</li>
@@ -2830,32 +3597,32 @@
 									<p>洗去疲惫感</p>
 									<span>舒适洗浴专家</span>
 								</a>
-								<img  src="img/suning25.png" />
-								<img  src="img/suning26.png" />
+								<img src="img/suning25.png" />
+								<img src="img/suning26.png" />
 							</div>
 							<div class="speity">
 								<a class="bath">
 									<p>手机重患者</p>
 									<span>一机在手 世界我有</span>
 								</a>
-								<img  src="img/shouji.png" />
-								<img  src="img/shouji1.png" />
+								<img src="img/shouji.png" />
+								<img src="img/shouji1.png" />
 							</div>
 							<div class="speity">
 								<a class="bath">
 									<p>纸 因有爱</p>
 									<span>用心呵护您和家人的健康</span>
 								</a>
-								<img  src="img/zhi.png" />
-								<img  src="img/zhi1.png" />
+								<img src="img/zhi.png" />
+								<img src="img/zhi1.png" />
 							</div>
 							<div class="speity">
 								<a class="bath">
 									<p>干爽小屁屁</p>
 									<span>舒爽纸尿裤</span>
 								</a>
-								<img  src="img/liao.png" />
-								<img  src="img/liao1.png" />
+								<img src="img/liao.png" />
+								<img src="img/liao1.png" />
 							</div>
 						</div>
 					</div>
@@ -2940,10 +3707,15 @@
 			<!--热门手机-->
 			<div class="hotmobile">
 				<div class="mobileleft">
-					<div class="mobilehedr">
+					<div class="mobilehedr color33ae75">
 						<div class="hedrleft">
 							<p class="mobilename">热门手机</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs1.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a>智能手机</a>
@@ -2954,10 +3726,12 @@
 					</div>
 					<div class="mobilecont">
 						<div class="mobileimg">
-							<img class="mobileimg1" src="img/suning31.png" />
-							<div class="transparentbox"></div>
-							<p class="boxtext">iphone手机</p>
-							<p class="boxtext1">低至1699元</p>
+							<a href="">
+								<img class="mobileimg1" src="img/suning31.png" />
+								<div class="transparentbox"></div>
+								<p class="boxtext">iphone手机</p>
+								<p class="boxtext1">低至1699元</p>
+							</a>
 						</div>
 						<ul class="mobilecont1">
 							<li>
@@ -3050,9 +3824,14 @@
 				</div>
 				<div class="mobileleft rigt brai1n">
 					<div class="mobilehedr brai2n">
-						<div class="hedrleft brain">
+						<div class="hedrleft brain color50928B">
 							<p class="mobilename">电脑办公</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs2.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a>笔记本</a>
@@ -3169,9 +3948,14 @@
 			<!--家用电器开始-->
 			<div class="household">
 				<div class="househedr">
-					<div class="househedrleft">
+					<div class="househedrleft color5F6CB7">
 						<p class="housemame">家用电器</p>
 						<i class="iconfont">&#xe658;</i>
+						<div class="code">
+							<span></span>
+							<img src="img/indexs.png"/>
+							<p>手机苏宁扫一扫</p>
+						</div>
 					</div>
 					<div class="househedrright">
 						<a>平板电脑</a>
@@ -3183,139 +3967,139 @@
 				</div>
 				<div class="housecont">
 					<div class="mobileimg">
-							<img class="mobileimg1" src="img/suning40.png" />
-							<div class="transparentbox house"></div>
-							<p class="boxtext appliances">电器城</p>
-							<p class="boxtext1">正品保障 服务无忧</p>
+						<img class="mobileimg1" src="img/suning40.png" />
+						<div class="transparentbox house"></div>
+						<p class="boxtext appliances">电器城</p>
+						<p class="boxtext1">正品保障 服务无忧</p>
 					</div>
 					<ul class="mobilecont1">
-							<li>
-								<a>
-									<p class="conttext">美的粉丝日</p>
-									<p class="conttext1 house1">风冷对开门仅2699元</p>
-									<img src="img/suning41.png" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">志高五月清爽季</p>
-									<p class="conttext1 house1">最高立省1000元</p>
-									<img src="img/qi.jpg" />
-								</a>
-							</li>
-							<li>
-								<a>
-									<p class="conttext">电视家影</p>
-									<p class="conttext1 house1">合资55吋4K仅2999</p>
-									<img src="img/qi1.jpg" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">厨卫洪荒之利</p>
-									<p class="conttext1 house1">限量抢券200元</p>
-									<img src="img/qi2.png" />
-								</a>
-							</li>
+						<li>
+							<a>
+								<p class="conttext">美的粉丝日</p>
+								<p class="conttext1 house1">风冷对开门仅2699元</p>
+								<img src="img/suning41.png" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">志高五月清爽季</p>
+								<p class="conttext1 house1">最高立省1000元</p>
+								<img src="img/qi.jpg" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<p class="conttext">电视家影</p>
+								<p class="conttext1 house1">合资55吋4K仅2999</p>
+								<img src="img/qi1.jpg" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">厨卫洪荒之利</p>
+								<p class="conttext1 house1">限量抢券200元</p>
+								<img src="img/qi2.png" />
+							</a>
+						</li>
 					</ul>
 					<div class="mobileimg righthouse">
-							<p class="housetext">冰箱洗衣机</p>
-							<p class="housetext1">每满1000立减100</p>
-							<img class="mobileimg1 house2" src="img/xiyiji.png" />
+						<p class="housetext">冰箱洗衣机</p>
+						<p class="housetext1">每满1000立减100</p>
+						<img class="mobileimg1 house2" src="img/xiyiji.png" />
 					</div>
 					<ul class="mobilecont1">
-							<li>
-								<a>
-									<p class="conttext">端午提前购</p>
-									<p class="conttext1 house1">满8000元立减500</p>
-									<img src="img/qi3.jpg" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">夏普电视</p>
-									<p class="conttext1 house1">45吋会员版仅2399元</p>
-									<img src="img/qi4.jpg" />
-								</a>
-							</li>
-							<li>
-								<a>
-									<p class="conttext">史密斯超级品牌日</p>
-									<p class="conttext1 house1">预定返超市券</p>
-									<img src="img/qi5.png" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">五洲伯乐承包夏日</p>
-									<p class="conttext1 house1">口碑好货只为选你</p>
-									<img src="img/qi6.jpg" />
-								</a>
-							</li>
+						<li>
+							<a>
+								<p class="conttext">端午提前购</p>
+								<p class="conttext1 house1">满8000元立减500</p>
+								<img src="img/qi3.jpg" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">夏普电视</p>
+								<p class="conttext1 house1">45吋会员版仅2399元</p>
+								<img src="img/qi4.jpg" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<p class="conttext">史密斯超级品牌日</p>
+								<p class="conttext1 house1">预定返超市券</p>
+								<img src="img/qi5.png" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">五洲伯乐承包夏日</p>
+								<p class="conttext1 house1">口碑好货只为选你</p>
+								<img src="img/qi6.jpg" />
+							</a>
+						</li>
 					</ul>
 					<div class="contlogo">
-							<ul>
-								<li>
-									<a>
-										<img src="img/suninglogo.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/suninglogao1.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/suninglogo1.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su1.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su2.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su3.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su4.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su6.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su7.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su8.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su5.png" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/su9.jpg" />
-									</a>
-								</li>
-							</ul>
+						<ul>
+							<li>
+								<a>
+									<img src="img/suninglogo.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/suninglogao1.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/suninglogo1.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su1.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su2.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su3.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su4.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su6.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su7.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su8.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su5.png" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/su9.jpg" />
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -3335,9 +4119,14 @@
 			<div class="hotmobile">
 				<div class="mobileleft digita1l">
 					<div class="mobilehedr digita2l">
-						<div class="hedrleft digital">
+						<div class="hedrleft digital color3299CC">
 							<p class="mobilename">智能数码</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs3.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a>相机频道</a>
@@ -3444,9 +4233,14 @@
 				</div>
 				<div class="mobileleft rigt ca1r">
 					<div class="mobilehedr ca2r">
-						<div class="hedrleft car">
+						<div class="hedrleft car color558CCF">
 							<p class="mobilename">汽车用品</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs4.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">汽车用品频道</a>
@@ -3557,9 +4351,14 @@
 			<div class="hotmobile">
 				<div class="mobileleft homeap1p">
 					<div class="mobilehedr homeap2p">
-						<div class="hedrleft homeapp">
+						<div class="hedrleft homeapp colorC96B2C">
 							<p class="mobilename">生活家电</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs5.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">小家电馆</a>
@@ -3666,9 +4465,14 @@
 				</div>
 				<div class="mobileleft rigt material1s">
 					<div class="mobilehedr material2s">
-						<div class="hedrleft materials">
+						<div class="hedrleft materials colorB15641">
 							<p class="mobilename">家装建材</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs6.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">装修馆</a>
@@ -3778,9 +4582,14 @@
 			<!--美味生活开始-->
 			<div class="household">
 				<div class="househedr tast1y">
-					<div class="househedrleft tasty">
+					<div class="househedrleft tasty colorE96F1E">
 						<p class="housemame">生活美味</p>
 						<i class="iconfont">&#xe658;</i>
+						<div class="code">
+							<span></span>
+							<img src="img/indexs7.png"/>
+							<p>手机苏宁扫一扫</p>
+						</div>
 					</div>
 					<div class="househedrright">
 						<a href="">水果生鲜</a>
@@ -3792,139 +4601,139 @@
 				</div>
 				<div class="housecont">
 					<div class="mobileimg">
-							<img class="mobileimg1" src="img/mei.png" />
-							<div class="transparentbox house tasty1"></div>
-							<p class="boxtext">享瘦一夏</p>
-							<p class="boxtext1">苏鲜生99减30</p>
+						<img class="mobileimg1" src="img/mei.png" />
+						<div class="transparentbox house tasty1"></div>
+						<p class="boxtext">享瘦一夏</p>
+						<p class="boxtext1">苏鲜生99减30</p>
 					</div>
 					<ul class="mobilecont1">
-							<li>
-								<a>
-									<p class="conttext">粽子节</p>
-									<p class="conttext1 house1 tasty2">3元优惠券限量抢</p>
-									<img src="img/mei1.jpg" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">品质红酒节</p>
-									<p class="conttext1 house1 tasty2">满188减100</p>
-									<img src="img/mei2.jpg" />
-								</a>
-							</li>
-							<li>
-								<a>
-									<p class="conttext">献礼端午节</p>
-									<p class="conttext1 house1 tasty2">进口满99减10</p>
-									<img src="img/mei3.png" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">美食狂欢购</p>
-									<p class="conttext1 house1 tasty2">爆款5折起</p>
-									<img src="img/mei4.jpg" />
-								</a>
-							</li>
+						<li>
+							<a>
+								<p class="conttext">粽子节</p>
+								<p class="conttext1 house1 tasty2">3元优惠券限量抢</p>
+								<img src="img/mei1.jpg" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">品质红酒节</p>
+								<p class="conttext1 house1 tasty2">满188减100</p>
+								<img src="img/mei2.jpg" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<p class="conttext">献礼端午节</p>
+								<p class="conttext1 house1 tasty2">进口满99减10</p>
+								<img src="img/mei3.png" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">美食狂欢购</p>
+								<p class="conttext1 house1 tasty2">爆款5折起</p>
+								<img src="img/mei4.jpg" />
+							</a>
+						</li>
 					</ul>
 					<div class="mobileimg righthouse ">
-							<p class="housetext tasty2">超市年中大促</p>
-							<p class="housetext1 tasty2">嗨栋夏天 满99立减30</p>
-							<img class="mobileimg1 house2" src="img/mei5.jpg" />
+						<p class="housetext tasty2">超市年中大促</p>
+						<p class="housetext1 tasty2">嗨栋夏天 满99立减30</p>
+						<img class="mobileimg1 house2" src="img/mei5.jpg" />
 					</div>
 					<ul class="mobilecont1">
-							<li>
-								<a>
-									<p class="conttext">医药健康</p>
-									<p class="conttext1 house1 tasty2">夏季养生买3免1</p>
-									<img src="img/mei6.jpg" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">居家夏凉节</p>
-									<p class="conttext1 house1  tasty2">低至3.5折起</p>
-									<img src="img/mei7.jpg" />
-								</a>
-							</li>
-							<li>
-								<a>
-									<p class="conttext">5月纸品大赏</p>
-									<p class="conttext1 house1  tasty2">满2件5折</p>
-									<img src="img/mei8.jpg" />
-								</a>
-							</li>
-							<li class="rightboer">
-								<a>
-									<p class="conttext">洁净洗欢你</p>
-									<p class="conttext1 house1  tasty2">满2件5折</p>
-									<img src="img/mei9.jpg" />
-								</a>
-							</li>
+						<li>
+							<a>
+								<p class="conttext">医药健康</p>
+								<p class="conttext1 house1 tasty2">夏季养生买3免1</p>
+								<img src="img/mei6.jpg" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">居家夏凉节</p>
+								<p class="conttext1 house1  tasty2">低至3.5折起</p>
+								<img src="img/mei7.jpg" />
+							</a>
+						</li>
+						<li>
+							<a>
+								<p class="conttext">5月纸品大赏</p>
+								<p class="conttext1 house1  tasty2">满2件5折</p>
+								<img src="img/mei8.jpg" />
+							</a>
+						</li>
+						<li class="rightboer">
+							<a>
+								<p class="conttext">洁净洗欢你</p>
+								<p class="conttext1 house1  tasty2">满2件5折</p>
+								<img src="img/mei9.jpg" />
+							</a>
+						</li>
 					</ul>
 					<div class="contlogo">
-							<ul>
-								<li>
-									<a>
-										<img src="img/mei10.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei11.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei12.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei13.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei14.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei15.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei16.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei18.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei19.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei20.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei21.jpg" />
-									</a>
-								</li>
-								<li>
-									<a>
-										<img src="img/mei17.jpg" />
-									</a>
-								</li>
-							</ul>
+						<ul>
+							<li>
+								<a>
+									<img src="img/mei10.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei11.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei12.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei13.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei14.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei15.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei16.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei18.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei19.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei20.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei21.jpg" />
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/mei17.jpg" />
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -3933,9 +4742,14 @@
 			<div class="hotmobile">
 				<div class="mobileleft mothe1r">
 					<div class="mobilehedr mothe2r">
-						<div class="hedrleft mother">
+						<div class="hedrleft mother colorE87272">
 							<p class="mobilename">美妈萌娃</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs8.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">车床座椅</a>
@@ -4042,9 +4856,14 @@
 				</div>
 				<div class="mobileleft rigt makeu1p">
 					<div class="mobilehedr makeu2p">
-						<div class="hedrleft makeup">
+						<div class="hedrleft makeup colorE7658C">
 							<p class="mobilename">美妆个护</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs9.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">洗发护</a>
@@ -4155,9 +4974,14 @@
 			<div class="hotmobile">
 				<div class="mobileleft dres1s">
 					<div class="mobilehedr dres2s">
-						<div class="hedrleft dress">
+						<div class="hedrleft dress color9A6392">
 							<p class="mobilename">服饰配饰</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs10.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">夏季新款</a>
@@ -4264,9 +5088,14 @@
 				</div>
 				<div class="mobileleft rigt  outdoo1r">
 					<div class="mobilehedr  outdoo2r">
-						<div class="hedrleft outdoor">
+						<div class="hedrleft outdoor color76639A">
 							<p class="mobilename">户外运动</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs11.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">运动鞋</a>
@@ -4377,9 +5206,14 @@
 			<div class="hotmobile">
 				<div class="mobileleft  financia1l">
 					<div class="mobilehedr  financia2l">
-						<div class="hedrleft financial">
+						<div class="hedrleft financial colorB87B1B">
 							<p class="mobilename">金融</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs12.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">抢红包</a>
@@ -4486,9 +5320,14 @@
 				</div>
 				<div class="mobileleft rigt rea1d">
 					<div class="mobilehedr rea2d">
-						<div class="hedrleft read">
+						<div class="hedrleft read colorA16B46">
 							<p class="mobilename">阅读</p>
 							<i class="iconfont">&#xe658;</i>
+							<div class="code">
+								<span></span>
+								<img src="img/indexs13.png"/>
+								<p>手机苏宁扫一扫</p>
+							</div>
 						</div>
 						<div class="hedrright">
 							<a href="">孕产育儿</a>
@@ -4665,6 +5504,7 @@
 							<ul>
 								<li>
 									<img src="img/app.png" />
+									<img class="listimg" src="img/listimg.png"/>
 									<p class="listname1">Danisa/皇冠丹麦曲奇黄油饼干90g</p>
 									<p class="listname2">
 										拼购价
@@ -4679,12 +5519,12 @@
 										</span>
 									</p>
 									<p class="listnum">
-										<i>2</i>
-										人团
+										<i>2</i> 人团
 									</p>
 								</li>
 								<li>
 									<img src="img/app1.png" />
+									<img class="listimg1" src="img/listimg.png"/>
 									<p class="listname1">枣阳四井岗露天油桃5斤装</p>
 									<p class="listname2">
 										拼购价
@@ -4699,12 +5539,12 @@
 										</span>
 									</p>
 									<p class="listnum">
-										<i>2</i>
-										人团
+										<i>2</i> 人团
 									</p>
 								</li>
 								<li>
 									<img src="img/app2.png" />
+									<img class="listimg2" src="img/listimg.png"/>
 									<p class="listname1">泰国原装进口 7coin七咔呢方便面海鲜味70gX5连包</p>
 									<p class="listname2">
 										拼购价
@@ -4719,8 +5559,7 @@
 										</span>
 									</p>
 									<p class="listnum">
-										<i>2</i>
-										人团
+										<i>2</i> 人团
 									</p>
 								</li>
 							</ul>
@@ -4737,7 +5576,7 @@
 				<div class="livecont">
 					<ul>
 						<li>
-							<a class="live1"  href="">
+							<a class="live1" href="">
 								<img src="img/zhibo.png" />
 								<div class="livecolor"></div>
 								<div class="mark"></div>
@@ -4758,7 +5597,7 @@
 							</div>
 						</li>
 						<li>
-							<a class="live1"  href="">
+							<a class="live1" href="">
 								<img src="img/zhibo2.png" />
 								<div class="livecolor"></div>
 								<div class="mark"></div>
@@ -4779,7 +5618,7 @@
 							</div>
 						</li>
 						<li>
-							<a class="live1"  href="">
+							<a class="live1" href="">
 								<img src="img/zhibo4.png" />
 								<div class="livecolor"></div>
 								<div class="mark"></div>
@@ -4800,7 +5639,7 @@
 							</div>
 						</li>
 						<li>
-							<a class="live1"  href="">
+							<a class="live1" href="">
 								<img src="img/zhibo6.png" />
 								<div class="livecolor"></div>
 								<div class="mark"></div>
@@ -4821,7 +5660,7 @@
 							</div>
 						</li>
 						<li>
-							<a class="live1"  href="">
+							<a class="live1" href="">
 								<img src="img/zhibo8.png" />
 								<div class="livecolor"></div>
 								<div class="mark"></div>
@@ -4854,277 +5693,251 @@
 					<h5>猜你喜欢</h5>
 				</div>
 				<ul class="likecont">
-						<li>
-							<a href="">
-								<img src="img/xihuan.png" />
-								<p class="title">海尔电热水器ES60H-C6(NE)家用储水式热水器电热60升</p>
-								<p class="price">
-									<i>￥</i>
-									880.00
-								</p>
-								<span class="tip">劵</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan.jpg" />
-								<p class="title">小米6 6GB+64GB 亮黑色 全网通4G手机 双卡双待</p>
-								<p class="price">
-									<i>￥</i>
-									2998.00
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan1.jpg" />
-								<p class="title">【苏宁易购超市】心相印 卷纸 优选系列 3层100克*10粒 无芯卫生纸 卷筒纸巾</p>
-								<p class="price">
-									<i>￥</i>
-									11.90
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan2.jpg" />
-								<p class="title">【苏宁易购超市】维达（Vinda） 抽纸 细韧压花3层140抽软抽*18包（小规格）（整箱销售）</p>
-								<p class="price">
-									<i>￥</i>
-									44.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan3.jpg" />
-								<p class="title">【苏宁易购超市】金龙鱼 花生浓香食用调和油 食用油5L</p>
-								<p class="price">
-									<i>￥</i>
-									49.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan4.jpg" />
-								<p class="title">五羊（fiveram）母婴宝宝专用洗衣液 儿童婴儿洗衣液500gx3包【苏宁自营】</p>
-								<p class="price">
-									<i>￥</i>
-									11.90
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan5.jpg" />
-								<p class="title">【苏宁易购超市】达利园蛋糕营养食品点心蛋香味600g早餐糕点面包办公休闲小吃零食下午茶点</p>
-								<p class="price">
-									<i>￥</i>
-									11.90
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan6.jpg" />
-								<p class="title">宝维盟婴儿润肤湿巾80片/抽 3包装 宝宝大包装湿纸巾</p>
-								<p class="price">
-									<i>￥</i>
-									12.90
-								</p>
-								<span class="tip">满减</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan7.jpg" />
-								<p class="title">【苏宁易购超市】卫新薰衣草洗衣液2kg 威露士出品</p>
-								<p class="price">
-									<i>￥</i>
-									30.00
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan8.jpg" />
-								<p class="title">怡恩贝宝宝手口湿巾婴儿护肤柔湿巾专用湿纸巾棉柔带盖80抽片*5包装</p>
-								<p class="price">
-									<i>￥</i>
-									25.90
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan9.jpg" />
-								<p class="title">【苏宁易购超市】爱乡亲手撕面包800g饼干糕点面包零食下午茶搭档早餐充饥佳品</p>
-								<p class="price">
-									<i>￥</i>
-									31.80
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan10.jpg" />
-								<p class="title">【苏宁易购超市】欧德堡 超高温灭菌全脂纯牛奶200ml*24盒 德国进口</p>
-								<p class="price">
-									<i>￥</i>
-									69.00
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan11.jpg" />
-								<p class="title">【苏宁自营】美素佳儿(Friso)金装幼儿配方奶粉3段（1-3岁）900g 荷兰原装进口</p>
-								<p class="price">
-									<i>￥</i>
-									165.00
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan12.jpg" />
-								<p class="title">【苏宁易购超市】 东北米 福临门金粳稻大米东北大米5kg /袋</p>
-								<p class="price">
-									<i>￥</i>
-									29.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan13.jpg" />
-								<p class="title">【苏宁易购超市】光明 莫斯利安 原味酸牛奶 常温酸奶 200ml*6*4箱 新老款式随机发货</p>
-								<p class="price">
-									<i>￥</i>
-									89.00
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan14.jpg" />
-								<p class="title">【苏宁易购超市】蒙牛精选牧场纯牛奶250ml×12盒</p>
-								<p class="price">
-									<i>￥</i>
-									40.50
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan15.jpg" />
-								<p class="title">【苏宁易购超市】香满园 美味富强小麦粉 面粉5kg 中筋面粉 家用粉 包子粉馒头粉</p>
-								<p class="price">
-									<i>￥</i>
-									19.90
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan16.jpg" />
-								<p class="title">【苏宁易购超市】福临门 家香味AE 浓香营养 菜籽油4L 非转基因 压榨食用油</p>
-								<p class="price">
-									<i>￥</i>
-									39.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan17.jpg" />
-								<p class="title">【苏宁易购超市】金龙鱼 精炼一级大豆油 食用油5L</p>
-								<p class="price">
-									<i>￥</i>
-									44.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/huan18.jpg" />
-								<p class="title">【苏宁易购超市】香满园 优选长粒米 香米 东北米 大米5kg</p>
-								<p class="price">
-									<i>￥</i>
-									29.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/ni.jpg" />
-								<p class="title">【苏宁易购超市】欧德堡 超高温灭菌全脂纯牛奶200ml*24盒 德国进口</p>
-								<p class="price">
-									<i>￥</i>
-									69.00
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/ni1.jpg" />
-								<p class="title">惠氏金装幼儿乐配方奶粉3段(1-3岁)1200g克(200g*6盒)旗舰版新包装</p>
-								<p class="price">
-									<i>￥</i>
-									138.00
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/ni2.jpg" />
-								<p class="title">【苏宁易购超市】 东北米 福临门金粳稻大米东北大米5kg /袋</p>
-								<p class="price">
-									<i>￥</i>
-									29.90
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/ni3.jpg" />
-								<p class="title">【苏宁易购超市】光明 莫斯利安 原味酸牛奶 常温酸奶 200ml*6*4箱 新老款式随机发货</p>
-								<p class="price">
-									<i>￥</i>
-									89.00
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="img/ni4.jpg" />
-								<p class="title">【苏宁易购超市】蒙牛精选牧场纯牛奶250ml×12盒</p>
-								<p class="price">
-									<i>￥</i>
-									40.50
-								</p>
-								<span class="tip">大聚惠</span>
-							</a>
-						</li>
-					</ul>
+					<li>
+						<a href="">
+							<img src="img/xihuan.png" />
+							<p class="title">海尔电热水器ES60H-C6(NE)家用储水式热水器电热60升</p>
+							<p class="price">
+								<i>￥</i> 880.00
+							</p>
+							<span class="tip">劵</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan.jpg" />
+							<p class="title">小米6 6GB+64GB 亮黑色 全网通4G手机 双卡双待</p>
+							<p class="price">
+								<i>￥</i> 2998.00
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan1.jpg" />
+							<p class="title">【苏宁易购超市】心相印 卷纸 优选系列 3层100克*10粒 无芯卫生纸 卷筒纸巾</p>
+							<p class="price">
+								<i>￥</i> 11.90
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan2.jpg" />
+							<p class="title">【苏宁易购超市】维达（Vinda） 抽纸 细韧压花3层140抽软抽*18包（小规格）（整箱销售）</p>
+							<p class="price">
+								<i>￥</i> 44.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan3.jpg" />
+							<p class="title">【苏宁易购超市】金龙鱼 花生浓香食用调和油 食用油5L</p>
+							<p class="price">
+								<i>￥</i> 49.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan4.jpg" />
+							<p class="title">五羊（fiveram）母婴宝宝专用洗衣液 儿童婴儿洗衣液500gx3包【苏宁自营】</p>
+							<p class="price">
+								<i>￥</i> 11.90
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan5.jpg" />
+							<p class="title">【苏宁易购超市】达利园蛋糕营养食品点心蛋香味600g早餐糕点面包办公休闲小吃零食下午茶点</p>
+							<p class="price">
+								<i>￥</i> 11.90
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan6.jpg" />
+							<p class="title">宝维盟婴儿润肤湿巾80片/抽 3包装 宝宝大包装湿纸巾</p>
+							<p class="price">
+								<i>￥</i> 12.90
+							</p>
+							<span class="tip">满减</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan7.jpg" />
+							<p class="title">【苏宁易购超市】卫新薰衣草洗衣液2kg 威露士出品</p>
+							<p class="price">
+								<i>￥</i> 30.00
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan8.jpg" />
+							<p class="title">怡恩贝宝宝手口湿巾婴儿护肤柔湿巾专用湿纸巾棉柔带盖80抽片*5包装</p>
+							<p class="price">
+								<i>￥</i> 25.90
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan9.jpg" />
+							<p class="title">【苏宁易购超市】爱乡亲手撕面包800g饼干糕点面包零食下午茶搭档早餐充饥佳品</p>
+							<p class="price">
+								<i>￥</i> 31.80
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan10.jpg" />
+							<p class="title">【苏宁易购超市】欧德堡 超高温灭菌全脂纯牛奶200ml*24盒 德国进口</p>
+							<p class="price">
+								<i>￥</i> 69.00
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan11.jpg" />
+							<p class="title">【苏宁自营】美素佳儿(Friso)金装幼儿配方奶粉3段（1-3岁）900g 荷兰原装进口</p>
+							<p class="price">
+								<i>￥</i> 165.00
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan12.jpg" />
+							<p class="title">【苏宁易购超市】 东北米 福临门金粳稻大米东北大米5kg /袋</p>
+							<p class="price">
+								<i>￥</i> 29.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan13.jpg" />
+							<p class="title">【苏宁易购超市】光明 莫斯利安 原味酸牛奶 常温酸奶 200ml*6*4箱 新老款式随机发货</p>
+							<p class="price">
+								<i>￥</i> 89.00
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan14.jpg" />
+							<p class="title">【苏宁易购超市】蒙牛精选牧场纯牛奶250ml×12盒</p>
+							<p class="price">
+								<i>￥</i> 40.50
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan15.jpg" />
+							<p class="title">【苏宁易购超市】香满园 美味富强小麦粉 面粉5kg 中筋面粉 家用粉 包子粉馒头粉</p>
+							<p class="price">
+								<i>￥</i> 19.90
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan16.jpg" />
+							<p class="title">【苏宁易购超市】福临门 家香味AE 浓香营养 菜籽油4L 非转基因 压榨食用油</p>
+							<p class="price">
+								<i>￥</i> 39.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan17.jpg" />
+							<p class="title">【苏宁易购超市】金龙鱼 精炼一级大豆油 食用油5L</p>
+							<p class="price">
+								<i>￥</i> 44.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/huan18.jpg" />
+							<p class="title">【苏宁易购超市】香满园 优选长粒米 香米 东北米 大米5kg</p>
+							<p class="price">
+								<i>￥</i> 29.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/ni.jpg" />
+							<p class="title">【苏宁易购超市】欧德堡 超高温灭菌全脂纯牛奶200ml*24盒 德国进口</p>
+							<p class="price">
+								<i>￥</i> 69.00
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/ni1.jpg" />
+							<p class="title">惠氏金装幼儿乐配方奶粉3段(1-3岁)1200g克(200g*6盒)旗舰版新包装</p>
+							<p class="price">
+								<i>￥</i> 138.00
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/ni2.jpg" />
+							<p class="title">【苏宁易购超市】 东北米 福临门金粳稻大米东北大米5kg /袋</p>
+							<p class="price">
+								<i>￥</i> 29.90
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/ni3.jpg" />
+							<p class="title">【苏宁易购超市】光明 莫斯利安 原味酸牛奶 常温酸奶 200ml*6*4箱 新老款式随机发货</p>
+							<p class="price">
+								<i>￥</i> 89.00
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/ni4.jpg" />
+							<p class="title">【苏宁易购超市】蒙牛精选牧场纯牛奶250ml×12盒</p>
+							<p class="price">
+								<i>￥</i> 40.50
+							</p>
+							<span class="tip">大聚惠</span>
+						</a>
+					</li>
+				</ul>
 				<p class="end">
-					<span class="line-left"></span>
-					END
+					<span class="line-left"></span> END
 					<span class="line-right"></span>
 				</p>
 			</div>
@@ -5139,22 +5952,22 @@
 								<a href="">正品保障</a>
 								<p>正品保障、提供发票</p>
 							</li>
-							<li >
+							<li>
 								<img class="footimg" src="img/ooo.png" />
 								<a href="">急速物流</a>
 								<p>如约送货、送货入户</p>
 							</li>
-							<li >
+							<li>
 								<img class="footimg1" src="img/kjj.png" />
 								<a href="">售后无忧</a>
 								<p>退还无忧、维修无忧</p>
 							</li>
-							<li >
+							<li>
 								<img class="footimg2" src="img/lkj.png" />
 								<a href="">特色服务</a>
 								<p>私人制定家电套餐</p>
 							</li>
-							<li >
+							<li>
 								<img class="footimg3" src="img/kjljk.png" />
 								<a href="">帮助中心</a>
 								<p> 您的购物指南 </p>
@@ -5264,7 +6077,7 @@
 							<li>
 								<a href="">服务市场</a>
 							</li>
-						
+
 						</ul>
 						<div class="footcont1">
 							<p>苏宁身边</p>
@@ -5462,59 +6275,75 @@
 			<!--底部结束-->
 			<!--边栏-->
 			<div class="sidebar">
-				<div class="bar1">
-					<a href="">
-						<i class="iconfont">&#xe61c;</i>
-					</a>
+				<div class="sidebarCont">
+					<div class="sidebarCont-top">
+						<div class="bar bar1">
+							<a href="">
+								<i class="iconfont">&#xe61c;</i>
+							</a>
+						</div>
+						<div class="bar bar2">
+							<a href="">
+								<div class="bar2Cont">
+									<div class="bar2Cont1">
+										<i class="iconfont icon-gouwuche"></i>
+										<span class="bartip">购物车</span>
+										<span class="barnum">0</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="bar bar3">
+							<a href="">
+								<i class="iconfont">&#xe615;</i>
+							</a>
+						</div>
+					</div>
+					<div class="sidebarCont-bottom">
+						<div class="bar bar4">
+							<a href="">
+								<i class="iconfont">&#xe68a;</i>
+							</a>
+						</div>
+						<div class="bar bar4">
+							<a href="">
+								<i class="iconfont">&#xe638;</i>
+							</a>
+						</div>
+						<div class="bar bar4">
+							<a href="">
+								<i class="iconfont">&#xe601;</i>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="bar2">
-					<a href="">
-						<i class="iconfont icon-gouwuche"></i>
-						<span class="bartip">购物车</span>
-						<span class="barnum">0</span>
-					</a>
-				</div>
-				<div class="bar3">
-					<a href="">
-						<i class="iconfont">&#xe615;</i>
-					</a>
-				</div>
-				<div class="bar4">
-					<a href="">
-						<i class="iconfont">&#xe68a;</i>
-					</a>
-				</div>
-				<div class="bar4">
-					<a href="">
-						<i class="iconfont">&#xe638;</i>
-					</a>
-				</div>
-				<div class="bar4">
-					<a href="">
-						<i class="iconfont">&#xe601;</i>
-					</a>
-				</div>
-				<div class="bar5">
-					<a href="">
-						<i class="iconfont">&#xe698;</i>
-					</a>
-				</div>
-				<div class="bar6">
-					<a href="">
-						<i class="iconfont">&#xe672;</i>
-					</a>
-				</div>
-				<div class="bar7">
-					<a href="">
-						<i class="iconfont">&#xe610;</i>
-					</a>
-				</div>
-				<div class="bar8">
-					<a href="">
-						<i class="iconfont">&#xe61f;</i>
-					</a>
+				<div class="sidebarCont1">
+					<div class="bar">
+						<a href="">
+							<i class="iconfont">&#xe698;</i>
+						</a>
+					</div>
+					<div class="bar">
+						<a href="">
+							<i class="iconfont">&#xe672;</i>
+						</a>
+					</div>
+					<div class="bar">
+						<a href="">
+							<i class="iconfont">&#xe610;</i>
+						</a>
+					</div>
+					<div class="bar">
+						<a href="">
+							<i class="iconfont">&#xe61f;</i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<script type="text/javascript" src="js/myjs1.js" ></script>
+	<script type="text/javascript" src="js/myjs2.js" ></script>
 </html>

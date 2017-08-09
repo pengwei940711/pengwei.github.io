@@ -1,0 +1,517 @@
+/* 右侧栏动画*/
+.sidebar{
+	width: 35px;
+	height: 100%;
+	background: #383838;
+	position: fixed;
+	right: 0;
+	top: 0;
+	text-align: center;
+}
+.sidebar .bar{
+	position: relative;
+	width: 35px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.sidebar .sidebarCont{
+	width: 35px;
+	height: 357px;
+	position: absolute;
+	top: 178px;
+	left: 0;
+}
+.sidebarCont .sidebarCont-top{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sidebar .iconfont{
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 30px;
+	color: #BD8411;
+	line-height: 30px;
+	text-align: center;
+}
+.sidebarCont .bar1{
+	margin-bottom: 10px;
+}
+.bar1 .iconfont{
+	display: block;
+	position: relative;
+}
+.sidebarCont .bar2{
+	height: auto;
+	color: #FFFFFF;
+}
+.bar2 .bar2Cont{
+	width: 29px;
+	padding: 0 3px;
+}
+.bar2 .bar2Cont1{
+	padding: 3px 0 10px;
+	border-top: 1px solid #4D4D4D;
+	border-bottom: 1px solid #4D4D4D;
+	text-align: center;
+	color: #FFFFFF;
+}
+.iconfont.icon-gouwuche{
+	color: #FFFFFF;
+	position: relative;
+	width: 29px;
+}
+.bartip{
+	display: block;
+	width: 20px;
+	margin: 0 auto;
+	text-align: center;
+	font-size:12px ;
+}
+.barnum{
+	display: inline-block;
+	min-width: 17px;
+	height: 15px;
+	padding: 0 2px;
+	background-color: #D00;
+	color: #FFF;
+	line-height: 15px;
+	border-radius: 5px;
+}
+.sidebarCont .sidebarCont-bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.sidebar .sidebarCont1{
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+}
+.sidebar .bar:hover{
+	background:#FF9900 ;
+}
+.sidebar .bar .iconfont:hover{
+	color: #fff;
+}
+
+/*导航*/
+.navleft1 .navleft1cont{
+	width: 988px;
+	padding: 15px 0;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	background: #fff;
+	z-index: 10;
+	display: none;
+}
+.navleft1cont .sn-site-list{
+    float: left;
+    width: 176px;
+    border-right: 1px solid #eee;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.navleft1cont dl.sn-site-list dt {
+    height: 25px;
+    width: 100%;
+    font-size: 14px;
+    color: #000000;
+    line-height: 17px;
+}
+.navleft1cont dl.sn-site-list dd {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin: auto;
+}
+.navleft1cont dl.sn-site-list dd p {
+    float: left;
+    height: 25px;
+    width: 78px;
+	color: #ccc;
+    line-height: 25px;
+}
+.navleft1cont dl.sn-site-list dd p a{
+	color: #666;
+	position: relative;
+	display: inline-block;
+}
+.navleft1cont dl.sn-site-list dd p a:hover{
+	color: #f60;
+}
+.navleft1cont .iconfont.icon-re{
+	font-size: 14px;
+	color: #f60;
+	margin-top: -5px;
+}
+.navleft1 .navnl1 i{
+	-webkit-transform-origin: center center;
+	-webkit-transition: all 1s;
+}
+.navleft1 .navnl1:hover i{
+	-webkit-transform: rotate(-180deg);
+}
+.navleft1cont .sn-site-list:nth-child(0){
+	border-right: none;
+}
+.navnl1:hover,.navnl2:hover{
+	background: #fff;
+}
+.navright2:hover{
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.navleft2 .navleft2cont{
+	width: 162px;
+	padding-top: 5px;
+	left: 0;
+	right: auto;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	background: #fff;
+	z-index: 10;
+	display: none;
+}
+.navleft2cont a{
+	height: 28px;
+	line-height: 28px;
+	display: block;
+	padding-left: 10px;
+	width: 71px;
+	float: left;
+	font-size: 12px;
+}
+.navleft2cont a:hover{
+	color: #f60;
+}
+
+.navright2 .navright2cont{
+	width: 79px;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	background: #fff;
+	left: -1px;
+	z-index: 10;
+	font-size:12px ;
+	display: none;
+}
+.navright2cont a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	width: 68px;
+}
+.navright2cont a:hover{
+	color: #f60;
+}
+
+.tesco .tescocont{
+	width: 162px;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	background: #fff;
+	z-index: 10;
+	font-size: 12px;
+	display: none;
+	left: -1px;
+}
+.tescocont .tescoimg{
+	width: 142px;
+	height: 56px;
+	margin: 5px 10px;
+	overflow: hidden;
+}
+.tescoimg .headimg{
+	float: left;
+	width: 54px;
+	height: 54px;
+	border: 1px solid #f7f7f7;
+	padding: 0;
+}
+.tescoimg .headimg img{
+	display: block;
+	width: 54px;
+	height: 54px;
+}
+.tescoimg .tescoimg1{
+	float: left;
+	width: 86px;
+	height: 56px;
+}
+.tescoimg .tescoimg1 a{
+	display: block;
+	margin-left: 20px;
+	line-height: 28px;
+	float: none;
+	padding: 0;
+	width: 64px;
+	word-break: break-all;
+}
+.tescoimg .tescoimg1 .login{
+	height: 28px;
+	overflow: hidden;
+}
+.tescoimg .tescoimg1 .daka{
+	height: 22px;
+	text-align: center;
+	color: #FFF;
+	line-height: 22px;
+	background: #F60;
+	border-radius: 4px;
+}
+.tescocont a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	width: 71px;
+	float: left;
+}
+.tescocont a:hover{
+	color: #f60;
+}
+.tescocont a .iconfont{
+	float: right;
+	font-size: 18px;
+	color: #ffd200;
+	line-height: 27px;
+	margin-right: 10px;
+	margin-top: 0;
+}
+.navright .shopping_cart{
+	position: relative;
+	float: left;
+	margin-left: -1px;
+	z-index: 10;
+}
+.shopping_cart .cartcont{
+	width: 280px;
+	height: 400px;
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 0;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	left: 0;
+	display: none;
+}
+.cartcont .cartcont1{
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	height: 176px;
+	text-align: center;
+}
+.cartcont1 button{
+	background: #FF9900;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.easy_pay,.enterment{
+	display: block;
+	position: relative;
+	float: left;
+	padding: 0 10px;
+	overflow: hidden;
+	font-size: 12px;
+	color: #666;
+}
+.navright2 .serve{
+	width: 162px;
+	padding-top: 5px;
+	right: -1px;
+	position: absolute;
+	top: 35px;
+	border: 1px solid #ddd;
+	background: #fff;
+	z-index: 10;
+	font-size: 12px;
+	display: none;
+}
+.navright2 .serve a{
+	height: 28px;
+	line-height: 28px;
+	display: block;
+	width: 71px;
+	margin-left: 10px;
+	float: left;
+}
+.navright2 .serve a:hover{
+	color: #f60;
+}
+.navright2 .serve a i{
+	font-size: 16px;
+	color: #ffd200;
+	text-decoration: none;
+	line-height: 27px;
+	margin-right: 9px;
+}
+
+
+.navright3 {
+	margin-left: 10px;
+	position: relative;
+	float: left;
+}
+.navright3 .navr5 {
+	display: block;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+.navr5 .iconfont.icon-shouji {
+	margin-right: 2px;
+	font-size: 17px;
+	color: #666;
+	float: left;
+	width: 18px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+.navr5 span {
+	font-size: 12px;
+	color: #666;
+}
+.navright3 .navright3cont{
+	right: 0;
+    width: 540px;
+    height: 220px;
+    overflow: hidden;
+    position: absolute;
+    top: 35px;
+    border: 1px solid #ddd;
+    background: #fff;
+	z-index: 10;
+	display: none;
+}
+.navright3 .navright3cont ul li{
+	float: left;
+	width: 180px;
+	margin: 17px 0 0;
+	text-align: center;
+}
+.navright3 .navright3cont ul li img{
+	display: block;
+	width: 147px;
+	height: 147px;
+	margin: 0 auto 10px;
+}
+.navright3 .navright3cont .aoyun-text{
+	width: 151px;
+	height: 16px;
+	margin: 5px 14px;
+}			
+.navright3 .navright3cont ul li p{
+	width: 180px;
+	height: 14px;
+	line-height: 14px;
+	overflow: hidden;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+
+
+/*全部商品分类*/
+.index-sort-detail {
+    position: absolute;
+    left: 190px;
+    min-height: 438px;
+    overflow: hidden;
+    background: #FFF;
+    z-index: 10;
+    top: 0;
+    display: none;
+}
+.index-sort-detail .sort-btn {
+    width: 686px;
+    float: left;
+    height: 24px;
+    margin: 10px 0 0 8px;
+    overflow: hidden;
+}
+.index-sort-detail .sort-btn a {
+    float: left;
+    height: 24px;
+    margin-left: 25px;
+    padding: 0 10px;
+    color: #FFF;
+    line-height: 24px;
+    text-align: center;
+    background: #F90;
+    text-decoration: none;
+}
+.index-sort-detail .sort-btn :hover{
+	background: #f60;
+}
+.index-sort-detail .cate-list {
+    width: 780px;
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+    overflow: hidden;
+    float: left;
+
+}
+.index-sort-detail dl {
+    float: left;
+    margin: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    width: 750px;
+}
+.index-sort-detail dt {
+    float: left;
+    width: 84px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.index-sort-detail dt a {
+    display: inline-block;
+    width: 84px;
+    height: 20px;
+    color: #000;
+}
+.index-sort-detail dd {
+    float: left;
+    width: 650px;
+    line-height: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    margin-top: 4px;
+    padding-bottom: 8px;
+    margin-left: 0;
+}
+.cate-list : nth-last-child(0) dd{
+	border-bottom: none;
+}
+ .index-sort-detail dd a.orange {
+    color: #f60;
+}
+.index-sort-detail dd a {
+    color: #666;
+    margin-right: 15px;
+    display: inline-block;
+}
+.index-sort-detail dd a:hover{
+	color: #f60;
+}

@@ -1,0 +1,69 @@
+/*大聚惠*/
+
+.contimg2 a:hover{
+	color: #f60;
+}
+.contimg2 img:hover{
+	-webkit-transform: scale(1.1);
+}
+.colorpurple img:hover{
+	-webkit-transform: translateX(-20px);
+}
+.mobileimg:hover{
+	opacity: 0.9;
+}
+.mobilecont1 img:hover,.mobilecont2 img:hover{
+	-webkit-transform: scale(1.03);
+}
+.househedrleft .code,.hedrleft .code{
+	position: absolute;
+	top: 40px;
+	left: 45px;
+	width: 120px;
+	height: 130px;
+	background: #FFF;
+	border: 1px solid #e2e2e2;
+	border-radius: 8px;
+	z-index: 1;
+	display: none;
+}
+.househedrleft .code span,.hedrleft .code span{
+	position: absolute;
+	width: 10px;
+	height: 8px;
+	top: -7px;
+	left: 56px;
+	background: url(../img/suning2.png) -267px -210px;
+}
+.househedrleft .code img,.hedrleft .code img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 6px auto 0;
+}
+.househedrleft .code p,.hedrleft .code p{
+	text-align: center;
+	color: #000;
+	font-size: 13px;
+	line-height: 25px;
+}
+.hedrleft.colorB87B1B .code,.hedrleft.colorA16B46 .code{
+	left: 10px;
+}
+/*优品清单*/
+.list img:hover{
+	-webkit-transform: scale(1.03);
+}
+/*app专享*/
+.listdown1 .listimg,.listdown1 .listimg1,.listdown1 .listimg2{
+	position: absolute;
+	top: 0;
+	display: none;
+}
+/*猜你喜欢*/
+.likecont img:hover{
+	-webkit-transform: scale(1.03);
+}
+.likecont a:hover{
+	color: #f60;
+}
